@@ -1,0 +1,28 @@
+{
+  "name": "mentormap",
+  "version": "1.0.0",
+  "description": "Mentor Networking Site",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Losttown84/MentorMap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Losttown84/MentorMap/issues"
+  },
+  "homepage": "https://github.com/Losttown84/MentorMap#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.16.4",
+    "http": "0.0.0",
+    "mongoose": "^5.5.4",
+    "morgan": "^1.9.1",
+    "socket.io": "^2.2.0"
+  }
+}
