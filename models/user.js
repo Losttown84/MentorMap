@@ -30,6 +30,7 @@ let userSchema = new Schema ({
         type: Map,
         of: String
     }
+    
 });
 
 let User = mongoose.model('User', userSchema);
