@@ -1,0 +1,157 @@
+#titlename {
+    color:white;
+    font-family: 'Rokkitt', serif;
+    width: 100px;
+    height: 50px;
+    float: left;
+    margin-left: 100px;
+    margin-top: 100px;
+    font-size: 60px;
+    font-family: 'Razor';
+    src: url('fonts/razor-webfont.eot');
+    src: url('fonts/razor-webfont.eot?')
+        format('embedded-opentype'),
+    url('fonts/razor-webfont.woff') format('woff'),
+    url('fonts/razor-webfont.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+section{
+    background: #57737A;
+}
+::placeholder{
+    color: white;
+}
+
+.logInbox {
+    margin-top: 70px;
+    width: 320px;
+    height: 420px;
+    background: #57737A;
+    color:white;
+    top: 50%;
+    left: 20%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    opacity: 0.8;
+    padding: 70px 30px;
+    
+    }
+    
+    .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+    }
+    
+    .signin {
+    color: white;
+    }
+    
+    h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    }
+    
+    .logInbox p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    }
+    
+    .logInbox input { 
+    width: 100%;
+    margin-bottom: 20px;
+    }
+    
+    .logInbox input[type="text"], input[type="password"] {
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: white;
+    font-size: 14px;
+    }
+    
+    .logInbox input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: cadetblue;
+    font-size: 18px;
+    color: white;
+    }
+    .logInbox input[type="submit"]:hover{
+background: #B7A09A;
+color: white;
+    }
+    .message{
+        color: black;
+    }
+    .link{
+        color:white;
+    }
+    .register-form {
+    display: none;
+    }
+    
+    a {
+    color: white;
+    margin-left: 5px;
+    }
+    
+    .name {
+    margin-top: 60px;
+    font-family: "PT Sans Narrow", sans-serif;
+    color: white;
+    font-size: 70px;
+    text-align: center;
+    }
+    .form .register-form{
+        display: none;
+    }
+    #about-bg-diagnal{
+
+background-image: url(./map.jpg);
+background-repeat: no-repeat;
+border-left: 200px solid white;
+border-top: 700px solid transparent;
+-webkit-clip-path: polygon(58% 0, 100% 0%, 100% 100%, 30% 100%);
+clip-path: polygon(58% 0, 100% 0%, 100% 100%, 30% 100%);
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+background-attachment: fixed;
+
+    }
+#aboutbox{
+    width: 1200px;
+    background-color: #57737A;
+    color: white;
+    text-align: center;
+    
+}
+#sectionTwo{
+    height: 700px;
+}
+footer{
+    background-color: #57737A;
+    text-align: center;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+color: bisque;
+text-decoration: none;
+}

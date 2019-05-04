@@ -13,12 +13,12 @@ return (
             
                 <form className="login-form">
                 <p>Email</p>
-                <input type="text" name="" placeholder="Enter Email" id="loginEmail"></input>
+                <input type="text" name="" placeholder="Enter Email" id="loginEmail" />
         
                 <p>Password</p>
-                <input type="password" name="" placeholder="Enter Password" id="loginPassword"></input>
+                <input type="password" name="" placeholder="Enter Password" id="loginPassword"/>
         
-                <input id="loginBtn" value="Login" type="submit"><a href="/" ></a></input>
+                <input id="loginBtn" value="Login" type="submit"><a href="/" >log in</a></input>
         
                 <p className="message">Not Registered?<a className="link" href="/"> Signup</a></p>
                 </form>
@@ -26,7 +26,7 @@ return (
                 <input type="text" placeholder="Name" id="signupName" />
                 <input type="text" placeholder="Enter Email" id="signupEmail" />
                 <input type="text" placeholder="New Password" id="signupPassword" />
-                <input className="SignBtn" value="Sign-Up" id="signupBtn" type="submit"><a href="/"></a></input>
+                <input className="SignBtn" value="Sign-Up" id="signupBtn" type="submit"><a href="/">sign up</a></input>
         
                 <p className="message">Already have an account?<a className="link" href="/"> Login</a></p>
                 </form>

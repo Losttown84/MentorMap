@@ -1,0 +1,177 @@
+body{
+    background-color:#57737A;
+    color:white;
+    border:none;
+    }
+    
+    .body-content{
+    position:relative;
+    top:20px;
+    height:700px;
+    width:800px;
+    margin-left:auto;
+    margin-right:auto;
+    background: transparent;
+    }
+    
+    nav a{
+    font-family: 'Poppins', sans-serif;
+    
+    }
+    
+    #searchbutton{
+    font-family: 'Poppins', sans-serif;
+    }
+    
+    h1 {
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    margin: .67em 0;
+    display: block;
+    }
+    
+    #registered {
+    margin-top: 50px;
+    }
+    
+    #registered img {
+    margin-bottom: 0px;
+    width: 100px;
+    height: 100px;
+    }
+    
+    #registered span {
+    clear: both;
+    display: block;
+    }
+    
+    img {
+    margin-bottom: 20px;
+    }
+    
+    .propicture {
+    margin: 10px 0 20px 0;
+    }
+    
+    .module{
+    position:relative;
+    top:10%;
+    height:65%;
+    width:450px;
+    margin-left:auto;
+    margin-right:auto;
+    }
+    
+    
+    .welcome{
+    position:relative;
+    top:30%;
+    height:65%;
+    width:900px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 50px;
+    }
+    
+    #info {
+    height:30px;
+    width:100%;;
+    vertical-align: middle;
+    height: 34px;
+    padding: 0 10px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    }
+    
+    ::placeholder {
+    color: white;
+    opacity: 0.5;
+    }
+    
+    #info:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color:white;
+    }
+    #info:focus {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    }
+    #info:active{
+    border: none;
+    }
+    #info.about{
+    height: 100px;
+    }
+    .radio-item {
+    display: inline-block;
+    position: relative;
+    padding: 0 6px;
+    margin: 10px 0 0;
+        }
+        
+    .radio-item input[type='radio'] {
+    display: none;
+    }
+        
+    .radio-item label {
+    color:white;
+    font-weight: normal;
+    }
+        
+    .radio-item label:before {
+    content: " ";
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    margin: 0 5px 0 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 11px;
+    border: 2px solid white;
+    background-color: transparent;
+    }
+        
+    .radio-item input[type=radio]:checked + label:after {
+    border-radius: 11px;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 9px;
+    left: 10px;
+    content: " ";
+    display: block;
+    background:white;
+    }
+    #buttonbottom{
+    color: white;
+    background-color: rgba(0,0,0,0.25);
+    border: none;
+    }
+    
+    .btn{
+    color: #57737A;
+    
+    }
+    
+    #buttonbottom:hover,
+    #buttonbottom:focus{
+    color: white;
+    background-color:cadetblue;
+    border-color:rgba(255,255,255,0.3);
+    }
+    #buttonbottom:active,
+    #buttonbottom.active{
+    background-color: rgba(0,0,0,0.15);
+    color: white;
+    border-color: rgba(255,255,255,0.07);
+    }
+    
