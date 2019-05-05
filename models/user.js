@@ -3,9 +3,10 @@ const mongoose = require('mongoose');
 let Schema = mongoose.Schema;
 
 let UserSchema = new Schema ({
+    _id: Schema.Types.ObjectId,
     name: {
-        type: String,
-        trim: true
+        first: String,
+        last: String
     }, 
     password: {
         type: String,
@@ -34,8 +35,12 @@ let UserSchema = new Schema ({
     industry: {
         type: String
     },  
-    yrsExp: Number,  
-    linkedin: String,
+    yrsExp: {
+        type: Number
+    }, 
+    linkedin: {
+        type: String
+    },
     online: {
         type: Boolean,
         default: false
@@ -47,7 +52,10 @@ let UserSchema = new Schema ({
     chat: {
         type: Schema.Types.ObjectID,
         ref: 'Chat'
-    }
+    },
+    savedMentors: [{
+        type: String
+    }]
 });
 
 let User = mongoose.model('User', UserSchema);
