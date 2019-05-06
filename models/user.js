@@ -3,10 +3,14 @@ const mongoose = require('mongoose');
 let Schema = mongoose.Schema;
 
 let UserSchema = new Schema ({
-    name: {
+    firstName: {
+        type: String, 
+        trim: true
+    },
+    lastName: {
         type: String,
         trim: true
-    }, 
+    },
     password: {
         type: String,
         trim: true,
@@ -18,36 +22,13 @@ let UserSchema = new Schema ({
         unique: true,
         match: [/.+@.+\..+/, 'Please enter a valid e-mail address'] 
     },
-    mentee: {
-        type: Boolean,
-        default: false
-        
-    },
-    mentor: {
-        type: Boolean,
-        default: false 
-    },
-    location: {
-        type: String,
-        trim: true
-    },
-    industry: {
-        type: String
-    },  
-    yrsExp: Number,  
-    linkedin: String,
-    online: {
-        type: Boolean,
-        default: false
-    }, 
-    img: {
-        type: String,
-        default: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png'
-    },
-    chat: {
-        type: Schema.Types.ObjectID,
+    chat: [{
+        type: Schema.Types.ObjectId,
         ref: 'Chat'
-    }
+    }],
+    savedMentors: [{
+        type: String
+    }]
 });
 
 let User = mongoose.model('User', UserSchema);
