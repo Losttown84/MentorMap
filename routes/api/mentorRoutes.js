@@ -3,7 +3,7 @@ const mentorController = require('../../controllers/mentorController');
 
 // match /api/mentors
 router  
-    .router('/api/mentors')
+    .route('/api/mentors')
     .get(mentorController.findMentors)
     .post(mentorController.saveMentor)
 router  
