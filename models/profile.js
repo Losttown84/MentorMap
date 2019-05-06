@@ -10,7 +10,6 @@ let profileSchema = new Schema ({
     mentee: {
         type: Boolean,
         default: false
-        
     },
     mentor: {
         type: Boolean,
@@ -29,10 +28,6 @@ let profileSchema = new Schema ({
     linkedin: {
         type: String
     },
-    online: {
-        type: Boolean,
-        default: false
-    }, 
     img: {
         type: String,
         default: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png'
@@ -44,4 +39,4 @@ let profileSchema = new Schema ({
 
 let Profile = mongoose.model('Profile', profileSchema);
 
-module.exports = profile
+module.exports = Profile;

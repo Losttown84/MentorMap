@@ -1,4 +1,5 @@
 module.exports = {
-    User: require('./User'),
+    User: require('./user'),
+    Profile: require('./profile'),
     Message: require('./chat')
 };

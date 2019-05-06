@@ -13,16 +13,22 @@ module.exports = {
         },
         findByIdAndUpdate(req, res) {
             db.User.findByIdAndUpdate(req.params.id)
-            .then(dbUsers => res.json(dbUsers))
+            .then(dbUser => res.json(dbUser))
             .catch((err) => console.log(err));
         },
-        findByIdAndDelete(req, res) {
-            db.User.findByIdAndDelete(req.params.id)
-            .then(dbUsers => res.json(dbUsers))
+        findMentors(req, res) {
+            db.Profile.find({ mentor: true})
+            .then(dbUser => res.json(dbUser))
             .catch((err) => console.log(err));
         },
-        createAccount(req, res) {
-            db.User.create({ })
+        findMentee(req, res) {
+            db.Profile.find({ mentee: true})
+            .then(dbUser => res.json(dbUser))
+            .catch((err) => console.log(err));
+        },
+        onlineUsers(req, res) {
+            db.User.find({ online: true})
+            .then(dbUsers => res.json(dbUsers)) 
+            .catch((err) => console.log(err));
         }
-
-}
+    }
