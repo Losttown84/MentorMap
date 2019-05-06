@@ -22,12 +22,13 @@ let UserSchema = new Schema ({
         unique: true,
         match: [/.+@.+\..+/, 'Please enter a valid e-mail address'] 
     },
+    online: {
+        type: Boolean,
+        default: false
+    }, 
     chat: [{
         type: Schema.Types.ObjectId,
         ref: 'Chat'
-    }],
-    savedMentors: [{
-        type: String
     }]
 });
 

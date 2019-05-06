@@ -4,7 +4,7 @@ const mentorController = require('../../controllers/mentorController');
 // match /api/mentors
 router  
     .router('/api/mentors')
-    .get(mentorController.findAll)
+    .get(mentorController.findMentors)
     .post(mentorController.saveMentor)
 router  
     .route('/:id')
