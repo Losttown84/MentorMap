@@ -3,13 +3,12 @@ const mentorController = require('../../controllers/mentorController');
 
 // match /api/mentors
 router  
-    .route('/')
+    .router('/api/mentors')
     .get(mentorController.findAll)
-    .post(mentorController.saveMentor);
-
+    .post(mentorController.saveMentor)
 router  
     .route('/:id')
     .get(mentorController.findById)
-    .post(mentorController.deleteMentor);
+    .post(mentorController.findByIdAndUpate);
 
 module.exports = router;

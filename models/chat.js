@@ -15,9 +15,7 @@ let chatSchema = new Schema ({
     },
     message: {
         type: String
-    },
-    users: [{ type: Schema.Types.ObjectId, ref: 'User' }]
-
+    }
 });
 
 let Chat = mongoose.model('Chat', chatSchema);

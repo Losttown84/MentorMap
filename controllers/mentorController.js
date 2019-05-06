@@ -20,6 +20,9 @@ module.exports = {
             db.User.findByIdAndDelete(req.params.id)
             .then(dbUsers => res.json(dbUsers))
             .catch((err) => console.log(err));
+        },
+        createAccount(req, res) {
+            db.User.create({ })
         }
 
 }
