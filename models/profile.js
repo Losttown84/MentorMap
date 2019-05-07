@@ -3,6 +3,14 @@ const mongoose = require('mongoose');
 let Schema = mongoose.Schema;
 
 let profileSchema = new Schema ({
+    firstName: {
+        type: String, 
+        trim: true
+    },
+    lastName: {
+        type: String,
+        trim: true
+    },
     user: {
         type: Schema.Types.ObjectId,
         ref: 'User'

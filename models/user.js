@@ -3,13 +3,9 @@ const mongoose = require('mongoose');
 let Schema = mongoose.Schema;
 
 let UserSchema = new Schema ({
-    firstName: {
-        type: String, 
-        trim: true
-    },
-    lastName: {
+    username: {
         type: String,
-        trim: true
+        unique: true
     },
     password: {
         type: String,
@@ -26,6 +22,10 @@ let UserSchema = new Schema ({
         type: Boolean,
         default: false
     }, 
+    dateCreated: {
+        type: Date,
+        default: Date.now
+      },
     chat: [{
         type: Schema.Types.ObjectId,
         ref: 'Chat'
