@@ -13,7 +13,7 @@ class First extends React.Component {
             <div className="logInbox">
               <form className="login-form">
                 <p>Email</p>
-                <input
+              <input
                   type="text"
                   name=""
                   placeholder="Enter Email"
@@ -29,8 +29,8 @@ class First extends React.Component {
                 />
 
                 <input id="loginBtn" value="Login" type="submit">
-                  <a href="" />
-                </input>
+                  {/* <a href="" /> */}
+                </input> 
 
                 <p className="message">
                   Not Registered?
@@ -54,7 +54,7 @@ class First extends React.Component {
                   id="signupBtn"
                   type="submit"
                 >
-                  <a href="/">sdss</a> 
+                  {/* <a href="/">sdss</a>  */}
                 </input>
 
                 <p className="message">
