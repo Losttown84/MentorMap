@@ -5,10 +5,10 @@ const mongoose = require('mongoose');
 const http = require('http')
 const io = require('socket.io');
 const routes = require('./routes');
+const app = express();
 const server = http.Server(app);
 const chat = io(server);
 const PORT = process.env.PORT || 3001;
-const app = express();
 
 // Serve up static assets
 if (process.env.NODE === 'production') {
@@ -20,14 +20,15 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // DB Config
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb:127.0.0.1/mentormap';
+mongoose.Promise = Promise;
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/mentormap';
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 
 // Socket.IO conection
 chat.on('connection', function(socket){
     console.log('user connected with id: ', chatid)
     socket.on('user joined', function(data){
-    socket.join(data.username);    
+    socket.join(data.username);  
     });
 
     socket.on('disconnect', function(){

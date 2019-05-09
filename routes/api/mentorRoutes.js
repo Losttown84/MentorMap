@@ -5,10 +5,11 @@ const mentorController = require('../../controllers/mentorController');
 router  
     .route('/api/mentors')
     .get(mentorController.findMentors)
-    .post(mentorController.saveMentor)
+    // .post(mentorController.saveMentor)
+    
 router  
     .route('/:id')
     .get(mentorController.findById)
-    .post(mentorController.findByIdAndUpate);
+    // .post(mentorController.findByIdAndUpate);
 
 module.exports = router;

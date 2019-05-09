@@ -17,12 +17,12 @@ module.exports = {
             .catch((err) => console.log(err));
         },
         findMentors(req, res) {
-            db.Profile.find({ mentor: true})
+            db.User.find({ mentor: true })
             .then(dbUser => res.json(dbUser))
             .catch((err) => console.log(err));
         },
         findMentee(req, res) {
-            db.Profile.find({ mentee: true})
+            db.User.find({ mentee: true})
             .then(dbUser => res.json(dbUser))
             .catch((err) => console.log(err));
         },
