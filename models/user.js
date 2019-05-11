@@ -1,11 +1,10 @@
 // Packages
 const mongoose = require('mongoose');
-const bcrypt = require('bcrypt');
-const saltRounds = 10;
+const bcrypt = require('bcryptjs');
 
-let Schema = mongoose.Schema;
+const Schema = mongoose.Schema;
 
-let UserSchema = new Schema ({
+const UserSchema = new Schema ({
     username: {
         type: String,
         unique: true
@@ -71,27 +70,19 @@ let UserSchema = new Schema ({
     }]
 });
 
+// Check to see if the user is being created or modified. If so, we will hash the password, 
+// if not we will skip hashing.
 UserSchema.pre('save', function (next) {
-    const user = this;
-
-    if (!user.ifNew('password')) {
+    if (!this.isModified('password')) {
         return next();
     }
-
-
-bcrypt.genSalt(saltRounds, function (err, salt) {
-    if (err) return next (err);
-
-
-bcrypt.hash(user.password, salt, function (err, hash) {
-    if (err) return next (err);
-
-    user.password = hash;
-
+    this.password = bcrypt.hashSync(this.password, 10);
     next();
-});
-});
-});
+
+// Compare entered password with hashed password saved in our db.
+UserSchema.methods.comparePassword = function(plaintext, cb) {
+    return cb(null, bcrypt.compareSync(plaintext, this.password));
+};
 
 let User = mongoose.model('User', UserSchema);
 
