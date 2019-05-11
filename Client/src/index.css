@@ -473,19 +473,16 @@ SVG Icons - svgicons.sparkk.fr
   stroke-width: 1;
 }
 
-html {
-  font-family: Roboto;
-}
-
 #main {
   width: 400px;
   margin: 2em auto;
 }
-
+.datePicker{
+  color: white;
+}
 .datePickerLabel, .datePickerSelector {
-  border: 2px solid #ccc;
-  border-radius: 5px;
-  padding: 1.5em;
+  border: 1px solid #ccc;
+  padding: 1em;
 }
 .datePickerSelector {
   padding: 0;
@@ -528,10 +525,10 @@ html {
   fill: black;
 }
 .datePickerSelectorTableHeaderPreviousMonth:hover path, .datePickerSelectorTableHeaderNextMonth:hover path {
-  fill: #4691f6;
+  fill: white;
 }
 .datePickerSelectorTableDays:hover {
-  background: #f7faff;
+  background: rgba(0,0,0,0.2);
 }
 .datePickerSelectorTableDays, .datePickerSelectorTableDaysNotInMonth {
   cursor: pointer;
@@ -546,10 +543,10 @@ html {
   color: #ddd;
 }
 .datePickerSelectorTableDaysNotInMonth:hover {
-  background: #fdffdd;
+  background: cadetblue;
 }
 .datePickerSelectorTableDaysSelected {
-  background: #e3effe;
+  background: rgba(0,0,0,0.2);
   border-left: 0;
   cursor: default;
 }
@@ -561,9 +558,7 @@ html {
 .datePickerCaret path {
   fill: #444;
 }
-.datePickerLabel:hover {
-  border-color: #4691f6;
-}
+
 .datePickerLabel:hover .datePickerCaret path {
-  fill: #4691f6;
+  fill: rgba(0,0,0,0.2);
 }

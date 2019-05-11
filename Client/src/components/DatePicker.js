@@ -173,10 +173,6 @@ class DatePickerSelector extends React.Component {
     }
     }
     
-    /**
-    * Entry
-    */
-    
     class DatePicker1 extends React.Component {
     render() {
         return <DatePicker value={new Date()} />;

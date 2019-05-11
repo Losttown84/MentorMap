@@ -76,11 +76,7 @@ class Third extends React.Component {
 
             <div className="col-md-4">
               <div className="card">
-                <img
-                  className="card-img-top"
-                  src="http://petslady.com/sites/default/files/2017-12/guy_with_dog2.jpg"
-                  alt="Card image cap"
-                />
+              
                 <div className="card-body">
                   <h5 className="card-title">Name</h5>
                   <p className="card-text">field</p>
@@ -90,11 +86,6 @@ class Third extends React.Component {
                 </div>
               </div>
               <div className="card">
-                <img
-                  className="card-img-top"
-                  src="http://cdn.lifebuzz.com/images/228720/lifebuzz-fc0aeeaa36ba8877d195e0be9f180690-limit_2000.jpg"
-                  alt="Card image cap"
-                />
                 <div className="card-body">
                   <h5 className="card-title">Card title</h5>
                   <p className="card-text">
