@@ -4,10 +4,17 @@
   "private": true,
   "proxy": "http://localhost:3001/",
   "dependencies": {
+    "@atlaskit/atlassian-switcher": "^1.0.0",
+    "@storybook/react": "^5.0.11",
+    "grommet": "^2.7.0",
+    "moment": "^2.24.0",
     "react": "^16.8.6",
+    "react-day-picker": "^7.3.0",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "3.0.0"
+    "react-scripts": "3.0.0",
+    "react-time-picker": "^3.5.2",
+    "styled-components": "^4.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
