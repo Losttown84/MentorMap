@@ -12,7 +12,7 @@ module.exports = {
             .catch((err) => console.log(err));
         },
         findByIdAndUpdate(req, res) {
-            db.User.findByIdAndUpdate(req.params.id)
+            db.User.findByIdAndUpdate(req.params.id, User)
             .then(dbUser => res.json(dbUser))
             .catch((err) => console.log(err));
         },
@@ -32,3 +32,5 @@ module.exports = {
             .catch((err) => console.log(err));
         }
     }
+    const styledcode = { color: "red", backgroundColor: "white" }
+    {styledcode}
