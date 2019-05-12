@@ -1,7 +1,18 @@
 import React from "react";
+import axios from "axios";
+// import {Example, Signup, Login} from "./signin";
 
 class First extends React.Component {
   render() {
+
+    const dummylogin = {
+      username: "testinfinity@infinity.com",
+      password: "1234abcddd"
+    }
+    axios.post("http://localhost:3001/signup", dummylogin).then(function(data) {
+      console.log("this is what we got back", data);
+    })
+    
     return (
       <div>
         <section id="about">
@@ -9,64 +20,8 @@ class First extends React.Component {
             MENTORMAP
           </h1>
           <div id="about-bg-diagnal" />
-          <div className="container">
-            <div className="logInbox">
-              <form className="login-form">
-                <p>Email</p>
-              <input
-                  type="text"
-                  name=""
-                  placeholder="Enter Email"
-                  id="loginEmail"
-                />
-
-                <p>Password</p>
-                <input
-                  type="password"
-                  name=""
-                  placeholder="Enter Password"
-                  id="loginPassword"
-                />
-
-                <input id="loginBtn" value="Login" type="submit">
-                  {/* <a href="" /> */}
-                </input> 
-
-                <p className="message">
-                  Not Registered?
-                  <a className="link" href="/">
-                    {" "}
-                    Signup
-                  </a>
-                </p>
-              </form>
-              <form className="register-form">
-                <input type="text" placeholder="Name" id="signupName" />
-                <input type="text" placeholder="Enter Email" id="signupEmail" />
-                <input
-                  type="text"
-                  placeholder="New Password"
-                  id="signupPassword"
-                />
-                <input
-                  className="SignBtn"
-                  value="Sign-Up"
-                  id="signupBtn"
-                  type="submit"
-                >
-                  {/* <a href="/">sdss</a>  */}
-                </input>
-
-                <p className="message">
-                  Already have an account?
-                  <a className="link" href="/">
-                    {" "}
-                    Login
-                  </a>
-                </p>
-              </form>
-            </div>
-          </div>
+          <div className="container"/>
+{/* <Example><Signup><Login></Login></Signup></Example> */}
         </section>
         <section id="sectionTwo">
           <div className="container">

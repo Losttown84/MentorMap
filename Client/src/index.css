@@ -1,4 +1,5 @@
 body {
+ 
   margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -6,9 +7,451 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:#57737A;
+  color: white;
+  border: none;
 }
-
+.where{
+  margin-top: 10px;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.body-content{
+  position:relative;
+  top:20px;
+  height:700px;
+  width:800px;
+  margin-left:auto;
+  margin-right:auto;
+  background: transparent;
+  }
+  
+  nav a{
+  font-family: 'Poppins', sans-serif;
+  
+  }
+  
+  #searchbutton{
+  font-family: 'Poppins', sans-serif;
+  }
+  
+  h1 {
+  text-align: center;
+  font-size: 2em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  margin: .67em 0;
+  display: block;
+  }
+  
+  #registered {
+  margin-top: 50px;
+  }
+  
+  #registered img {
+  margin-bottom: 0px;
+  width: 100px;
+  height: 100px;
+  }
+  
+  #registered span {
+  clear: both;
+  display: block;
+  }
+  
+  img {
+  margin-bottom: 20px;
+  }
+  
+  .propicture {
+  margin: 10px 0 20px 0;
+  }
+  
+  .module{
+  position:relative;
+  top:10%;
+  height:65%;
+  width:450px;
+  margin-left:auto;
+  margin-right:auto;
+  }
+  
+  
+  .welcome{
+  position:relative;
+  top:30%;
+  height:65%;
+  width:900px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 50px;
+  }
+  
+  #info {
+  height:30px;
+  width:100%;;
+  vertical-align: middle;
+  height: 34px;
+  padding: 0 10px;
+  margin-top: 3px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 20px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  }
+  
+  ::placeholder {
+  color: white;
+  opacity: 0.5;
+  }
+  
+  #info:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color:white;
+  }
+  #info:focus {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  }
+  #info:active{
+  border: none;
+  }
+  #info.about{
+  height: 100px;
+  }
+  .radio-item {
+  display: inline-block;
+  position: relative;
+  padding: 0 6px;
+  margin: 10px 0 0;
+      }
+      
+  .radio-item input[type='radio'] {
+  display: none;
+  }
+      
+  .radio-item label {
+  color:white;
+  font-weight: normal;
+  }
+      
+  .radio-item label:before {
+  content: " ";
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  margin: 0 5px 0 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 11px;
+  border: 2px solid white;
+  background-color: transparent;
+  }
+      
+  .radio-item input[type=radio]:checked + label:after {
+  border-radius: 11px;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  content: " ";
+  display: block;
+  background:white;
+  }
+  #buttonbottom{
+  color: white;
+  background-color: rgba(0,0,0,0.25);
+  border: none;
+  }
+  
+  .btn{
+  color: #57737A;
+  
+  }
+ 
+  #buttonbottom:hover,
+  #buttonbottom:focus{
+  color: white;
+  background-color:cadetblue;
+  border-color:rgba(255,255,255,0.3);
+  }
+  #buttonbottom:active,
+  #buttonbottom.active{
+  background-color: rgba(0,0,0,0.15);
+  color: white;
+  border-color: rgba(255,255,255,0.07);
+  }
+  
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#titlename {
+  color:white;
+  font-family: 'Rokkitt', serif;
+  width: 100px;
+  height: 50px;
+  float: left;
+  margin-left: 100px;
+  margin-top: 100px;
+  font-size: 60px;
+ 
+}
+
+section{
+  background: #57737A;
+}
+::placeholder{
+  color: white;
+}
+.box-controller{
+  visibility: visible;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 24em;
+}
+.controller{
+  flex: 1;
+  text-align: center;
+  height: 100%;
+  line-height: 2;
+  cursor: pointer;
+}
+.selected-controller{
+  transition: border 0.5s ease-out;
+  border-bottom: 2px solid cadetblue;
+}
+box-container{
+  display: flex;
+  flex-direction: column;
+  max-width: 24em;
+  min-width: 21em;
+  box-shadow: 0px 0px 20px 0px cadetblue;
+  border-radius: 6px;
+  padding: 24px;
+}
+.inner-container {
+  visibility: hidden;
+  transition: 0.2 ease-out;
+}
+.inner-container .show{
+  visibility: visible;
+}
+
+  .link{
+      color:white;
+  }
+  .register-form {
+  display: none;
+  }
+  
+  .links1 {
+  color: white;
+  margin-left: 5px;
+  }
+  
+  .name {
+  margin-top: 60px;
+  font-family: "PT Sans Narrow", sans-serif;
+  color: white;
+  font-size: 70px;
+  text-align: center;
+  }
+  .form .register-form{
+      display: none;
+  }
+  #about-bg-diagnal{
+
+background-image: url(./map.jpg);
+background-repeat: no-repeat;
+border-left: 200px solid white;
+border-top: 700px solid transparent;
+-webkit-clip-path: polygon(58% 0, 100% 0%, 100% 100%, 30% 100%);
+clip-path: polygon(58% 0, 100% 0%, 100% 100%, 30% 100%);
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+background-attachment: fixed;
+
+  }
+#aboutbox{
+  width: 1200px;
+  background-color: #57737A;
+  color: white;
+  text-align: center;
+  
+}
+#sectionTwo{
+  height: 700px;
+}
+footer{
+  background-color: #57737A;
+  text-align: center;
+}
+footer a{
+  color: white;
+  text-decoration: none;
+}
+footer a:hover{
+color: bisque;
+text-decoration: none;
+}
+.Name{
+  text-decoration: none;
+  color: white;
+  letter-spacing: 5px;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  }
+  nav ul li{
+      float: right;
+  }
+  .dropbtn {
+      background-color:#57737A;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      }
+      
+   
+      .dropdown {
+      position: relative;
+      display: inline-block;
+      }
+      
+
+      .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      }
+      
+     
+      .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      }
+      
+  
+      .dropdown-content a:hover {background-color: #f1f1f1}
+      
+      /* Show the dropdown menu on hover */
+      .dropdown:hover .dropdown-content {
+      display: block;
+      }
+      
+  
+      .dropdown:hover .dropbtn {
+      background-color: rgba(0,0,0,0.25);
+      }
+      .radio-item {
+          display: inline-block;
+          position: relative;
+          padding: 0 6px;
+          margin: 10px 0 0;
+              }
+              
+          .radio-item input[type='radio'] {
+          display: none;
+          }
+              
+          .radio-item label {
+          color:white;
+          font-weight: normal;
+          }
+              
+          .radio-item label:before {
+          content: " ";
+          display: inline-block;
+          position: relative;
+          top: 5px;
+          margin: 0 5px 0 0;
+          width: 20px;
+          height: 20px;
+          border-radius: 11px;
+          border: 2px solid white;
+          background-color: transparent;
+          }
+              
+          .radio-item input[type=radio]:checked + label:after {
+          border-radius: 11px;
+          width: 12px;
+          height: 12px;
+          position: absolute;
+          top: 9px;
+          left: 10px;
+          content: " ";
+          display: block;
+          background:white;
+          }
+  .bottomNavbar {
+      background: #57737A;
+      letter-spacing: 5px;
+      overflow: hidden;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      font-family: 'Poppins', sans-serif;
+      }
+      
+      .bottomNavbar a {
+      float:left;
+      margin-left:250px;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 15px;
+      }
+      
+      .bottomNavbar a:hover {
+      background-color: #ddd;
+      color: black;
+      text-decoration: none;
+      }

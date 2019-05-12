@@ -5,7 +5,7 @@ let Schema = mongoose.Schema;
 let UserSchema = new Schema ({
     username: {
         type: String,
-        unique: true
+        // unique: true
     },
     password: {
         type: String,
@@ -15,7 +15,7 @@ let UserSchema = new Schema ({
     },
     email: {
         type: String,
-        unique: true,
+        // unique: true,
         match: [/.+@.+\..+/, 'Please enter a valid e-mail address'] 
     },
     online: {
@@ -67,6 +67,28 @@ let UserSchema = new Schema ({
         ref: 'Chat'
     }]
 });
+
+UserSchema.methods = {
+	checkPassword: function (inputPassword) {
+		return bcrypt.compareSync(inputPassword, this.password)
+	},
+	hashPassword: plainTextPassword => {
+		return bcrypt.hashSync(plainTextPassword, 10)
+	}
+}
+
+// Define hooks for pre-saving
+UserSchema.pre('save', function (next) {
+	if (!this.password) {
+		console.log('models/user.js =======NO PASSWORD PROVIDED=======')
+		next()
+	} else {
+		console.log('models/user.js hashPassword in pre save');
+		
+		this.password = this.hashPassword(this.password)
+		next()
+	}
+})
 
 
 let User = mongoose.model('User', UserSchema);
