@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 let Schema = mongoose.Schema;
 
-//  collect mentee's 
+
 let SessionSchema = new Schema({
     interest: {
         type: String

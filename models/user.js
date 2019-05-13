@@ -79,6 +79,7 @@ UserSchema.pre('save', function (next) {
     this.password = bcrypt.hashSync(this.password, 10);
     next();
 
+});
 // Compare entered password with hashed password saved in our db.
 UserSchema.methods.comparePassword = function(plaintext, cb) {
     return cb(null, bcrypt.compareSync(plaintext, this.password));

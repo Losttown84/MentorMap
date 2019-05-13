@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const mentorController = require('../../controllers/mentorController');
+const db = require('../../models');
 
 // match /api/mentors
 router  
@@ -7,8 +8,6 @@ router
     .get(mentorController.findMentors)
     // .post(mentorController.saveMentor)
     
-router
-.route('/api/')    
 router  
     .route('/:id')
     .get(mentorController.findById)
