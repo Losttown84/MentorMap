@@ -1,6 +1,7 @@
 import React from "react";
 import {DatePicker, DatePicker1, DatePickerLabel, DatePickerSelector} from "./DatePicker";
 
+
 class Second extends React.Component {
   render() {
     return (
@@ -81,6 +82,7 @@ class Second extends React.Component {
                             <label for="ritemc">both</label>
                   </div>
                   <DatePicker><DatePicker1><DatePickerLabel><DatePickerSelector></DatePickerSelector></DatePickerLabel></DatePicker1></DatePicker>
+    <br></br><br></br>
 <input id="buttonbottom" type="submit" value="Register" name="register" class="btn btn-block btn-light"/>
                   </form>
               </div>

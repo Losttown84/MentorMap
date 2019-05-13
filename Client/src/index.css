@@ -463,6 +463,65 @@ SVG Icons - svgicons.sparkk.fr
   width: 1em;
   height: 1em;
 }
+.profile-card{
+  width: 400px;
+  margin: auto;
+  background: transparent;
+}
+.gallery {
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.gallery::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery > * {
+  display: block;
+  height: 200px;
+  box-sizing: border-box;
+}
+
+.gallery img {
+  height: 100%;
+}
+
+.gallery__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+  background: orange;
+  font-weight: bold;
+  font-size: 2rem;
+  color: whitesmoke;
+}
+ 
+.hide-scrollbar {
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 800px) {
+  h1 {
+    font-size: 3rem;
+  }
+  .hide-scrollbar {
+    height: 400px;
+  }
+  .gallery > * {
+    max-height: 400px;
+  }
+}
+
 .svg-icon path,
 .svg-icon polygon,
 .svg-icon rect {
