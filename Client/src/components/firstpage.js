@@ -21,7 +21,7 @@ class First extends React.Component {
           </h1>
           <div id="about-bg-diagnal" />
           <div className="container"/>
- <Example></Example>
+          <Example></Example>
         </section>
         <section id="sectionTwo">
           <div className="container">

@@ -50,11 +50,11 @@ export default class Example extends React.Component {
                   <Form>
                     <FormGroup>
                       <Label for="exampleEmail">Email</Label>
-                      <Input type="email" name="email" id="exampleEmail" placeholder="with a placeholder" />
+                      <Input type="email" name="email" id="exampleEmail" placeholder="johnsmith@abc.com" />
                     </FormGroup>
                     <FormGroup>
                       <Label for="examplePassword">Password</Label>
-                      <Input type="password" name="password" id="examplePassword" placeholder="password placeholder" />
+                      <Input type="password" name="password" id="examplePassword" placeholder="enter your password" />
                     </FormGroup>
                   <Button>Login</Button>
                   </Form>
@@ -69,12 +69,16 @@ export default class Example extends React.Component {
                 <Card body>
                   <Form>
                     <FormGroup>
+                      <Label for="username">Username</Label>
+                      <Input placeholder="username" />
+                    </FormGroup>  
+                    <FormGroup>
                       <Label for="exampleEmail">Email</Label>
-                      <Input type="email" name="email" id="exampleEmail" placeholder="with a placeholder" />
+                      <Input type="email" name="email" id="exampleEmail" placeholder="johnsmith@abc.com" />
                     </FormGroup>
                     <FormGroup>
                       <Label for="examplePassword">Password</Label>
-                      <Input type="password" name="password" id="examplePassword" placeholder="password placeholder" />
+                      <Input type="password" name="password" id="examplePassword" placeholder="create a password" />
                     </FormGroup>
                   <Button>Register</Button>
                   </Form>
