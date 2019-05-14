@@ -21,7 +21,7 @@ class Carol extends React.Component {
     const getDummyContent = () =>
     Array.from({ length: 10 }, (_, i) => (
         <a href="/">
-        <img src={`https://picsum.photos/${imgDims(i)}/?random&${Math.random()}`} />
+        <img src={`https://picsum.photos/{imgDims(i)}/?random&${Math.random()}`} />
         </a>
     ))
     
