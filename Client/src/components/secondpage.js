@@ -54,10 +54,10 @@ class Second extends React.Component {
                   <div class="row">
               <div class="body-content">
               <div class="module">
-                  <h1>Lets Find You an Interest</h1>
+                  <h1 id="title2">Lets Find You an Interest</h1>
                   <form class="form" action="form.php" method="post" enctype="multipart/form-data" autocomplete="off">
                   <div class="alert alert-error"></div>
-                  <h8>Pick a subject you're interested in! </h8>
+                  <h8 id="title2">Pick a subject you're interested in! </h8>
                   <div class="dropdown">
                     <button class="dropbtn">Pick one</button>
                     <div class="dropdown-content">
