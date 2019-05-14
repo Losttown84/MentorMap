@@ -110,12 +110,12 @@ code {
   }
   
   #info:hover {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color:rgba(0,0,0,0.25);
   color:white;
   }
   #info:focus {
   border: none;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color:rgba(0,0,0,0.25);
   color: #ffffff;
   }
   #info:active{
@@ -553,7 +553,7 @@ textarea{
   font-size: 15px;
   line-height: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color:rgba(0,0,0,0.25);
   color: rgba(255, 255, 255, 0.7);
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -575,7 +575,7 @@ input[type="email"]
   font-size: 15px;
   line-height: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color:rgba(0,0,0,0.25);
   color: rgba(255, 255, 255, 0.7);
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -600,7 +600,7 @@ input[type="text"]:hover,
 input[type="password"]:hover,
 input[type="email"]:hover {
   border-color: rgba(255, 255, 255, 0.5);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color:rgba(0,0,0,0.25);
   color: rgba(255, 255, 255, 0.7);
 }
 select:focus,
@@ -609,9 +609,10 @@ input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus {
   border: 2px solid;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color:rgba(0,0,0,0.25);
   color: #ffffff;
 }
+
 .btn {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -641,7 +642,7 @@ input[type="email"]:focus {
 }
 .btn:hover,
 .btn:focus {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color:rgba(0,0,0,0.25);
   color: #ffffff;
   border-color: rgba(255, 255, 255, 0.3);
   box-shadow: 0 0 rgba(0, 0, 0, 0);
@@ -651,46 +652,28 @@ input[type="email"]:focus {
   background-color: rgba(0, 0, 0, 0.15);
   color: rgba(255, 255, 255, 0.8);
   border-color: rgba(255, 255, 255, 0.07);
-  box-shadow: inset 1.5px 1.5px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 1.5px 1.5px 3pxrgba(0,0,0,0.25);
 }
-.btn-primary {
-  background-color: rgba(0, 0, 0, 0.5);
+#button3 {
+  background-color:rgba(0,0,0,0.25);
   color: #ffffff;
   border: 1px solid transparent;
   box-shadow: 0 0 rgba(0, 0, 0, 0);
   border-radius: 2px;
   -webkit-transition: background-color 0.2s, box-shadow 0.2s, background-color 0.2s, border-color 0.2s, color 0.2s;
   transition: background-color 0.2s, box-shadow 0.2s, background-color 0.2s, border-color 0.2s, color 0.2s;
-  background-image: -webkit-linear-gradient(top, #0f9ada, #0076ad);
-  background-image: linear-gradient(to bottom, #0f9ada, #0076ad);
+  background-color:rgba(0,0,0,0.25);
   border: 0;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.15) inset;
 }
-.btn-primary:hover,
-.btn-primary:focus {
-  background-color: #21b0f1;
+#button3:hover,
+#button3:focus {
+  background-color:cadetblue ;
   color: #ffffff;
   border-color: transparent;
   box-shadow: 0 0 rgba(0, 0, 0, 0);
 }
-.btn-primary:active,
-.btn-primary.active {
-  background-color: rgba(0, 0, 0, 0.5);;
-  color: rgba(255, 255, 255, 0.7);
-  border-color: transparent;
-  box-shadow: inset 1.5px 1.5px 3px rgba(0, 0, 0, 0.5);
-}
-.btn-primary:hover,
-.btn-primary:focus {
-  background-image: -webkit-linear-gradient(top, #37c0ff, #0097dd);
-  background-image: linear-gradient(to bottom, #37c0ff, #0097dd);
-}
-.btn-primary:active,
-.btn-primary.active {
-  background-image: -webkit-linear-gradient(top, #006ea1, #00608d);
-  background-image: linear-gradient(to bottom, #006ea1, #00608d);
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6) inset, 0 0 0 1px rgba(255, 255, 255, 0.07) inset;
-}
+
 .btn-block {
   display: block;
   width: 100%;

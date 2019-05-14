@@ -59,9 +59,12 @@ render() {
               <input type="text" placeholder="Full Name" name="username" required />
               <label>Tell us About yourself! (Intrests.. etc)</label>
               <textarea name="message" placeholder="About you!" rows="4" cols="30" required/>
+              <label><i class="fab fa-linkedin"></i> Account Username</label>
+              <input type="text" placeholder="Username"></input>
               <div class="avatar"><label>Select your Profile Picture: </label><input type="file" name="avatar" accept="image/*" required /></div>
               <br></br>
-              <input type="submit" value="Register" name="register" class="btn btn-block btn-primary" />
+
+              <input type="submit" value="Register" name="register" id="button3" class="btn btn-block btn-light" />
             </form>
           </div>
         </div>
