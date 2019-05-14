@@ -222,6 +222,7 @@ code {
     transform: rotate(360deg);
   }
 }
+
 #titlename {
   color:white;
   font-family: 'Rokkitt', serif;
@@ -233,7 +234,11 @@ code {
   font-size: 60px;
  
 }
-
+.card.card-body{
+  background: #57737A;
+  color: red;
+  border:none;
+}
 section{
   background: #57737A;
 }

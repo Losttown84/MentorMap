@@ -1,6 +1,7 @@
 import React from 'react';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col, Form, FormGroup, Label, Input } from 'reactstrap';
 import classnames from 'classnames';
+import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default class Example extends React.Component {
@@ -8,8 +9,13 @@ export default class Example extends React.Component {
     super(props);
 
     this.toggle = this.toggle.bind(this);
+    this.handleLogin = this.handleLogin.bind(this);
+    this.handleTyping = this.handleTyping.bind(this);
+
     this.state = {
-      activeTab: '1'
+      activeTab: '1',
+      email: '',
+      password: ''
     };
   }
 
@@ -20,7 +26,35 @@ export default class Example extends React.Component {
       });
     }
   }
+  handleLogin = () => {
+    console.log('you got clicked!')
+
+    var loginStuff ={
+      username: this.state.email,
+      password: this.state.password
+    }
+    if (this.state.activeTab === '1') {
+      axios.post('http://localhost:3001/login', loginStuff).then(function(data) {
+        console.log('we got this back!!!', data);
+      })
+    } else if(this.state.activeTab === '2') {
+      axios.post('http://localhost:3001/signup', loginStuff).then(function(data) {
+        console.log('we got this back!!!', data);
+      })
+    }
+    
+
+  }
+
+  
+
+  handleTyping = (event) => {
+    console.log('we hit@', event.target.name, event.target.value)
+    this.setState({[event.target.name]: event.target.value})
+  }
+
   render() {
+    console.log('state!', this.state)
     return (
       <div>
         <Nav tabs>
@@ -50,13 +84,13 @@ export default class Example extends React.Component {
                   <Form>
                     <FormGroup>
                       <Label for="exampleEmail">Email</Label>
-                      <Input type="email" name="email" id="exampleEmail" placeholder="johnsmith@abc.com" />
+                      <Input onChange={this.handleTyping} type="email" name="email" id="exampleEmail" placeholder="johnsmith@abc.com" />
                     </FormGroup>
                     <FormGroup>
                       <Label for="examplePassword">Password</Label>
-                      <Input type="password" name="password" id="examplePassword" placeholder="enter your password" />
+                      <Input onChange={this.handleTyping} type="password" name="password" id="examplePassword" placeholder="enter your password" />
                     </FormGroup>
-                  <Button>Login</Button>
+                  <Button onClick={this.handleLogin}>Login</Button>
                   </Form>
                 </Card>
               </Col>
@@ -74,13 +108,13 @@ export default class Example extends React.Component {
                     </FormGroup>  
                     <FormGroup>
                       <Label for="exampleEmail">Email</Label>
-                      <Input type="email" name="email" id="exampleEmail" placeholder="johnsmith@abc.com" />
+                      <Input onChange={this.handleTyping} type="email" name="email" id="exampleEmail" placeholder="johnsmith@abc.com" />
                     </FormGroup>
                     <FormGroup>
                       <Label for="examplePassword">Password</Label>
-                      <Input type="password" name="password" id="examplePassword" placeholder="create a password" />
+                      <Input onChange={this.handleTyping} type="password" name="password" id="examplePassword" placeholder="create a password" />
                     </FormGroup>
-                  <Button>Register</Button>
+                  <Button onClick={this.handleLogin}>Register</Button>
                   </Form>
                 </Card>
               </Col>

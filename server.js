@@ -9,6 +9,7 @@ const app = express();
 const server = http.Server(app);
 const chat = io(server);
 const PORT = process.env.PORT || 3001;
+var passport = require('./passport')
 
 app.use(function (req, res, next) {
 
@@ -60,6 +61,7 @@ chat.on('connection', function(socket){
     });
 
 });
+app.use(passport.initialize());
 
 //  Routes
 app.use(routes);
