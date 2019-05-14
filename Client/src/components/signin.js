@@ -43,9 +43,19 @@ import classnames from 'classnames';
         <TabContent activeTab={this.state.activeTab}>
           <TabPane tabId="1">
             <Row>
-              <Col sm="12">
-                <h4>Tab 1 Contents</h4>
+              <Col sm="6">
+                <h4>Login Below</h4>
                 <Card body>
+                  <Form>
+                    <FormGroup>
+                      <Label for="exampleEmail">Email</Label>
+                      <Input type="email" name="email" id="exampleEmail" placeholder="johnsmith@abc.com" />
+                    </FormGroup>
+                    <FormGroup>
+                      <Label for="examplePassword">Password</Label>
+                      <Input type="password" name="password" id="examplePassword" placeholder="type your password" />
+                    </FormGroup>
+                  </Form>
                   <CardTitle>Special Title Treatment</CardTitle>
                   <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
                   <Button>Go somewhere</Button>
