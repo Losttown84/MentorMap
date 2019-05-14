@@ -1,8 +1,9 @@
 import React from 'react';
-import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
+import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col, Form, FormGroup, Label, Input } from 'reactstrap';
 import classnames from 'classnames';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
- class Example extends React.Component {
+export default class Example extends React.Component {
   constructor(props) {
     super(props);
 
@@ -49,16 +50,14 @@ import classnames from 'classnames';
                   <Form>
                     <FormGroup>
                       <Label for="exampleEmail">Email</Label>
-                      <Input type="email" name="email" id="exampleEmail" placeholder="johnsmith@abc.com" />
+                      <Input type="email" name="email" id="exampleEmail" placeholder="with a placeholder" />
                     </FormGroup>
                     <FormGroup>
                       <Label for="examplePassword">Password</Label>
-                      <Input type="password" name="password" id="examplePassword" placeholder="type your password" />
+                      <Input type="password" name="password" id="examplePassword" placeholder="password placeholder" />
                     </FormGroup>
+                  <Button>Login</Button>
                   </Form>
-                  <CardTitle>Special Title Treatment</CardTitle>
-                  <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
-                  <Button>Go somewhere</Button>
                 </Card>
               </Col>
             </Row>
@@ -66,10 +65,19 @@ import classnames from 'classnames';
           <TabPane tabId="2">
             <Row>
               <Col sm="6">
+              <h4>New User? Signup!</h4>
                 <Card body>
-                  <CardTitle>Special Title Treatment</CardTitle>
-                  <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
-                  <Button>Go somewhere</Button>
+                  <Form>
+                    <FormGroup>
+                      <Label for="exampleEmail">Email</Label>
+                      <Input type="email" name="email" id="exampleEmail" placeholder="with a placeholder" />
+                    </FormGroup>
+                    <FormGroup>
+                      <Label for="examplePassword">Password</Label>
+                      <Input type="password" name="password" id="examplePassword" placeholder="password placeholder" />
+                    </FormGroup>
+                  <Button>Register</Button>
+                  </Form>
                 </Card>
               </Col>
             </Row>
@@ -79,52 +87,3 @@ import classnames from 'classnames';
     );
   }
 }
-        
-    
-    
-  
-
-
-
-const Signup = React.createClass({
-  
-  
-      render:function(){
-        
-        
-            return (
-            <div>
-                   
-                  <div id="signup">
-                        <input type="email" id="email" placeholder="Email"/>
-                    <input type="password" id="password" placeholder="Password"/>
-                    <button id="send">Send</button>
-            </div>
-                </div>
-            
-            )
-      }
-})
-
-const Login = React.createClass({
-      render:function(){
-        
-        
-        
-            return (
-            
-                  <div>
-                              
-                 <div id="login">
-                    <input type="email" id="email" placeholder="Email"/>
-                    <input type="password" id="password" placeholder="Password"/>
-                    <button id="send">Send</button>
-            </div>
-                
-                  </div>
-              
-            )
-      }
-})
-
-export {Example, Signup, Login};

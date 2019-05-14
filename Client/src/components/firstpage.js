@@ -1,7 +1,6 @@
 import React from "react";
 import axios from "axios";
-import {Example, Signup, Login} from "./signin";
-import classnames from 'classnames';
+import Example from "./signin";
 
 class First extends React.Component {
   render() {
@@ -22,7 +21,7 @@ class First extends React.Component {
           </h1>
           <div id="about-bg-diagnal" />
           <div className="container"/>
- <Example><Signup><Login></Login></Signup></Example>
+ <Example></Example>
         </section>
         <section id="sectionTwo">
           <div className="container">
