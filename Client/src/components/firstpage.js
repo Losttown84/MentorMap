@@ -1,4 +1,5 @@
 import React from "react";
+import ControlledCarousel from "./Carolusel";
 
 class First extends React.Component {
   render() {
@@ -73,7 +74,7 @@ class First extends React.Component {
             <div className="row">
               <div id="aboutbox" className="jumbotron jumbotron-fluid">
                 <div className="container">
-               
+                <ControlledCarousel></ControlledCarousel>
                   <h1 className="display-4">What is MentorMap?</h1>
                   <p className="lead">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
