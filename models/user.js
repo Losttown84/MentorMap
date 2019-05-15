@@ -1,8 +1,10 @@
+// Packages
 const mongoose = require('mongoose');
-const bcrypt = require('bcrypt');
-let Schema = mongoose.Schema;
+const bcrypt = require('bcryptjs');
 
-let UserSchema = new Schema ({
+const Schema = mongoose.Schema;
+
+const UserSchema = new Schema ({
     username: {
         type: String,
         // unique: true
@@ -36,11 +38,11 @@ let UserSchema = new Schema ({
     },
     mentee: {
         type: Boolean,
-        default: false
+        default: null
     },
     mentor: {
         type: Boolean,
-        default: false 
+        default: null 
     },
     location: {
         type: String,
@@ -68,6 +70,7 @@ let UserSchema = new Schema ({
     }]
 });
 
+<<<<<<< HEAD
 UserSchema.methods = {
 	checkPassword: function (inputPassword) {
 		return bcrypt.compareSync(inputPassword, this.password)
@@ -90,6 +93,22 @@ UserSchema.pre('save', function (next) {
 	}
 })
 
+=======
+// Check to see if the user is being created or modified. If so, we will hash the password, 
+// if not we will skip hashing.
+UserSchema.pre('save', function (next) {
+    if (!this.isModified('password')) {
+        return next();
+    }
+    this.password = bcrypt.hashSync(this.password, 10);
+    next();
+
+});
+// Compare entered password with hashed password saved in our db.
+UserSchema.methods.comparePassword = function(plaintext, cb) {
+    return cb(null, bcrypt.compareSync(plaintext, this.password));
+};
+>>>>>>> d5e542f7806fb5a8b968030e8fd81485b2e8d71f
 
 let User = mongoose.model('User', UserSchema);
 

@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const mentorController = require('../../controllers/mentorController');
+const db = require('../../models');
 
 // match /api/mentors
 router  
