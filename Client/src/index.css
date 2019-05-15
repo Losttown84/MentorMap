@@ -1,4 +1,7 @@
+
 body {
+  height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -6,8 +9,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:#57737A;
   border: none;
+  background: #57737A;
+  background: -webkit-radial-gradient(top, ellipse cover,  cadetblue .5%,#57737A 99%); /* Chrome10+,Safari5.1+ */
 }
 
 code {
@@ -233,9 +237,6 @@ code {
  
 }
 
-section{
-  background: #57737A;
-}
 ::placeholder{
   color: white;
 }
@@ -298,7 +299,7 @@ box-container{
   }
   #about-bg-diagnal{
 
-background-image: url(./map.jpg);
+background-image: url(./components/Images/map.jpg);
 background-repeat: no-repeat;
 border-left: 200px solid white;
 border-top: 700px solid transparent;
@@ -313,7 +314,8 @@ background-attachment: fixed;
   }
 #aboutbox{
   width: 1200px;
-  background-color: #57737A;
+  background-color: transparent;
+  background: -webkit-radial-gradient(top, ellipse cover,  cadetblue .5%,#57737A 99%); /* Chrome10+,Safari5.1+ */
   color: white;
   text-align: center;
   
@@ -322,7 +324,8 @@ background-attachment: fixed;
   height: 700px;
 }
 footer{
-  background-color: #57737A;
+  background-color:transparent;
+  
   text-align: center;
 }
 footer a{
@@ -344,7 +347,7 @@ text-decoration: none;
       float: right;
   }
   .dropbtn {
-      background-color:#57737A;
+      background-color: transparent;
       color: white;
       padding: 16px;
       font-size: 16px;
@@ -379,7 +382,7 @@ text-decoration: none;
   
       .dropdown-content a:hover {background-color: #f1f1f1}
       
-      /* Show the dropdown menu on hover */
+     
       .dropdown:hover .dropdown-content {
       display: block;
       }
@@ -389,47 +392,47 @@ text-decoration: none;
       background-color: rgba(0,0,0,0.25);
       }
       .radio-item {
-          display: inline-block;
-          position: relative;
-          padding: 0 6px;
-          margin: 10px 0 0;
-              }
-              
-          .radio-item input[type='radio'] {
-          display: none;
-          }
-              
-          .radio-item label {
-          color:white;
-          font-weight: normal;
-          }
-              
-          .radio-item label:before {
-          content: " ";
-          display: inline-block;
-          position: relative;
-          top: 5px;
-          margin: 0 5px 0 0;
-          width: 20px;
-          height: 20px;
-          border-radius: 11px;
-          border: 2px solid white;
-          background-color: transparent;
-          }
-              
-          .radio-item input[type=radio]:checked + label:after {
-          border-radius: 11px;
-          width: 12px;
-          height: 12px;
-          position: absolute;
-          top: 9px;
-          left: 10px;
-          content: " ";
-          display: block;
-          background:white;
-          }
+        display: inline-block;
+        position: relative;
+        padding: 0 6px;
+        margin: 10px 0 0;
+            }
+            
+        .radio-item input[type='radio'] {
+        display: none;
+        }
+            
+        .radio-item label {
+        color:white;
+        font-weight: normal;
+        }
+            
+        .radio-item label:before {
+        content: " ";
+        display: inline-block;
+        position: relative;
+        top: 5px;
+        margin: 0 5px 0 0;
+        width: 20px;
+        height: 20px;
+        border-radius: 11px;
+        border: 2px solid white;
+        background-color: transparent;
+        }
+            
+        .radio-item input[type=radio]:checked + label:after {
+        border-radius: 11px;
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        top: 9px;
+        left: 10px;
+        content: " ";
+        display: block;
+        background:white;
+        }
   .bottomNavbar {
-      background: #57737A;
+      background: transparent;
       letter-spacing: 5px;
       overflow: hidden;
       position: fixed;
@@ -455,10 +458,9 @@ text-decoration: none;
       text-decoration: none;
       }
 
-/* -----
-SVG Icons - svgicons.sparkk.fr
------ */
+
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,900,300,100);
+
 .svg-icon {
   width: 1em;
   height: 1em;
@@ -574,12 +576,7 @@ input[type="email"]
   margin-bottom: 10px;
   font-size: 15px;
   line-height: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  background-color:rgba(0,0,0,0.25);
-  color: rgba(255, 255, 255, 0.7);
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  border-radius: 2px;
+  
 }
 
 select,
@@ -829,3 +826,149 @@ input[type="email"]:focus {
 .datePickerLabel:hover .datePickerCaret path {
   fill: rgba(0,0,0,0.2);
 }
+.where{
+  background: transparent;
+}
+
+#container {
+  margin:auto;
+  width:900px;
+  height: 100%;
+  background:transparent;
+  margin-bottom:50px;
+  overflow:auto;
+}
+
+#contact {
+  width:300px;
+  font-family: 'Lato', calibri, arial;
+  font-size:14px;
+  font-weight:300;
+  padding:10px;
+  text-align:left;
+  background: transparent;
+  overflow:auto;
+  float:left;
+  margin-left:40px;
+  color:#fff;
+}
+
+#contact p{
+  font-family: 'Lato', calibri, arial;
+  font-size:16px;
+  font-weight:300;
+  text-align:left;
+  color:#fff;
+
+}
+
+#contact h1{
+
+  font-size:20px;
+  font-weight:100;
+  text-align:center;
+  text-transform:uppercase;
+}
+
+#contact-wrap {
+  font-size:16px;
+  font-weight:300;
+  width: 402px;
+  color:#fff;
+  overflow:auto; 
+float:left;
+background: transparent;
+}
+
+#contact-area {
+  margin-left:3px;
+  width: 342px;
+  background: transparent;
+  padding:20px;
+}
+
+input, .message1 {
+  padding: 5px;
+  width: 450px;
+  font-family: 'Lato', calibri, arial;
+  font-size:14px;
+  font-weight:300;
+  color:#fff;
+      background-color:transparent;
+      border-top: 1px solid transparent;
+      border-left: 1px solid transparent;
+      border-bottom: 1px solid #fff;
+      border-right: 1px solid transparent;
+  
+  margin-bottom:15px;
+}
+
+textarea {
+  height: 150px;
+        background-color:transparent;
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid transparent;
+  
+}
+.background{
+  background-color: transparent;
+}
+.message1{
+  height: 150px;
+        background-color:transparent;
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid transparent;
+}
+textarea:focus, #contact-area input:focus {
+          background-color:rgba(0,0,0,0.25);
+      border-top: 1px solid transparent;
+      border-left: 1px solid transparent;
+      border-bottom: 1px solid #fff;
+      border-right: 1px solid transparent;
+  
+}
+
+#contact-area input.submit-button {
+  font-family: 'Lato', calibri, arial;
+  font-size:12px;
+  font-weight:300;
+  text-transform:uppercase;
+  width: 100px;
+  float: left;
+  background-color:transparent;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  background-color: cadetblue;
+      -moz-transition:all 0.1s ease-in-out;
+  -webkit-transition:all 0.1s ease-in-out;
+  -o-transition:all 0.1s ease-in-out;
+  -ms-transition:all 0.1s ease-in-out;
+  transition:all 0.1s ease-in-out;
+}
+
+#contact-area input.submit-button:hover {
+
+  color:#fff;
+  background-color:rgba(0,0,0,0.25);
+
+}
+
+.label {
+  background: transparent;
+  float: left;
+  text-align: left;
+  margin-right: 16px;
+  width: 100px;
+  padding-top: 5px;
+  font-family: 'Lato', calibri, arial;
+  font-size:18px;
+  font-weight:300;
+}
+
+

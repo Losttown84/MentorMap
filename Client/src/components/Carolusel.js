@@ -1,7 +1,8 @@
 import React from "react";
-import Carousel from 'react-bootstrap/Carousel'
+import Carousel from 'react-bootstrap/Carousel';
 
-export default class ControlledCarousel extends React.Component {
+
+class ControlledCarousel extends React.Component {
     constructor(props, context) {
         super(props, context);
     
@@ -32,7 +33,7 @@ export default class ControlledCarousel extends React.Component {
             <Carousel.Item>
             <img
                 className="d-block w-100"
-                src="holder.js/800x400?text=First slide&bg=373940"
+                src="./Images/ruler.jpeg"
                 alt="First slide"
             />
             <Carousel.Caption>
@@ -70,4 +71,4 @@ export default class ControlledCarousel extends React.Component {
         );
     }
     }
-    
+    export default ControlledCarousel;
