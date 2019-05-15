@@ -4,13 +4,16 @@ const db = require('../../models');
 
 
 router  
-    .route('/api/mentors')
-    .get(mentorController.findMentors)
-    // .post(mentorController.saveMentor)
+    .get('/api/mentor', mentorController.findMentors)
+
+router
+    .get('/api/mentor/:id', mentorController.findById)    
     
 router  
-    .route('/:id')
-    .get(mentorController.findById)
-    // .post(mentorController.findByIdAndUpate);
+    .get('/api/mentee', mentorController.findMentee)
+    
+router 
+    .get('/api/mentee/:id', mentorController.findById)
+    
 
 module.exports = router;
