@@ -12,6 +12,7 @@ body {
   border: none;
   background: #57737A;
   background: -webkit-radial-gradient(top, ellipse cover,  cadetblue .5%,#57737A 99%); /* Chrome10+,Safari5.1+ */
+  background-attachment: fixed;
 }
 
 code {

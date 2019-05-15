@@ -5,6 +5,7 @@ import First from './components/firstpage';
 import Second from './components/secondpage';
 import Third from './components/thirdpage';
 import Fourth from './components/fourthpage';
+import Fifth from './components/Fifthpage';
 
 class App extends React.Component {
   render() {
@@ -15,6 +16,7 @@ class App extends React.Component {
           <Route path ='/mentors' component={Second}/>
           <Route exact path ='/search' component={Third}/>
           <Route exact path ='/contact' component={Fourth}/>
+          <Route exact path ='/profile' component={Fifth}/>
         </Switch>
       </div>
     )
