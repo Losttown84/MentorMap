@@ -18,11 +18,18 @@
   },
   "homepage": "https://github.com/Losttown84/MentorMap#readme",
   "dependencies": {
+<<<<<<< HEAD
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.3.1",
+=======
     "bcryptjs": "^2.4.3",
+>>>>>>> d5e542f7806fb5a8b968030e8fd81485b2e8d71f
     "express": "^4.16.4",
     "http": "0.0.0",
     "mongoose": "^5.5.4",
     "morgan": "^1.9.1",
+    "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "path": "^0.12.7",
     "react": "^16.8.6",
