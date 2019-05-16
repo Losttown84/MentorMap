@@ -61,6 +61,10 @@ const UserSchema = new Schema ({
         type: String,
         default: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png'
     },
+    about: {
+        type: String,
+        max: 250 
+    },
     savedMentors: [{
         type: String
     }],
