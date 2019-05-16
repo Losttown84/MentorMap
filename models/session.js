@@ -23,7 +23,11 @@ let SessionSchema = new Schema({
   },
   time: {
     type: String
-  }
+  },
+  user: {
+    type: Schema.Types.ObjectId,
+    ref: 'User'
+}
 });
 
 let Session = mongoose.model('Session', SessionSchema);
