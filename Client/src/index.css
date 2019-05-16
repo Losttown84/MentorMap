@@ -11,7 +11,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   border: none;
   background: #57737A;
-  background: -webkit-radial-gradient(top, ellipse cover,  cadetblue .5%,#57737A 99%); /* Chrome10+,Safari5.1+ */
+  background: -webkit-radial-gradient(top, ellipse cover,  cadetblue .5%,#57737A 99.5%); /* Chrome10+,Safari5.1+ */
   background-attachment: fixed;
 }
 
@@ -68,11 +68,30 @@ code {
   img {
   margin-bottom: 20px;
   }
-  
+  .wrapper5 {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
   .propicture {
   margin: 10px 0 20px 0;
   }
-  
+  .Card{
+background:transparent;
+color: white;
+border-bottom: 1px solid #fff;
+border-top: 1px solid transparent;
+border-left: 1px solid transparent;
+border-right: 1px solid transparent;
+margin-left: 60px;
+margin-top: 30px;
+  }
+  .card:hover{
+    background-color: rgba(0,0,0,0.25);
+  }
+  #button5{
+    color: white;
+  }
   .module{
   position:relative;
   top:10%;
@@ -175,8 +194,9 @@ code {
   border: none;
   }
   
-  .btn{
+  .btn {
   color: #57737A;
+
   
   }
  
@@ -971,5 +991,8 @@ textarea:focus, #contact-area input:focus {
   font-size:18px;
   font-weight:300;
 }
-
-
+#leftside{
+margin-top: 200px;
+margin-left: 30px;
+float: left;
+}

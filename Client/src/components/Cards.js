@@ -10,15 +10,14 @@ class Cards extends React.Component {
  <div>
    <div className="container">
    <div className="row">
-      <Card style={{ width: '18rem' }}>
+      <Card className="Card" style={{ width: '30rem' }}>
             <Image src="holder.js/171x180" rounded />
          <Card.Body>
-            <Card.Title>Card Title</Card.Title>
+            <Card.Title>Full Name</Card.Title>
             <Card.Text>
-               Some quick example text to build on the card title and make up the bulk of
-               the card's content.
+             About 
             </Card.Text>
-            <button type="submit" className="btn btn-light">Go somewhere</button>
+            <button id="button5" type="submit" className="btn btn-light">Go somewhere</button>
          </Card.Body>
        </Card>
        </div>
