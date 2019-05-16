@@ -1,15 +1,15 @@
 import React from "react";
 import axios from "axios";
-import Example from "./signin";
+import Example from "../components/signin";
 
-class First extends React.Component {
+class Mainpage extends React.Component {
   render() {
 
     const dummylogin = {
       username: "testinfinity@infinity.com",
       password: "1234abcddd"
     }
-    axios.post("http://localhost:3001/signup", dummylogin).then(function(data) {
+    axios.post("http://localhost:3002/signup", dummylogin).then(function(data) {
       console.log("this is what we got back", data);
     })
     
@@ -54,4 +54,4 @@ class First extends React.Component {
   }
 }
 
-export default First;
+export default Mainpage;

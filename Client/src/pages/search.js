@@ -1,6 +1,6 @@
 import React from "react";
 
-class Third extends React.Component {
+class Search extends React.Component {
   render() {
     return (
       <div>
@@ -115,4 +115,4 @@ class Third extends React.Component {
   }
 }
 
-export default Third;
+export default Search;

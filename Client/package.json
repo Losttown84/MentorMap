@@ -2,9 +2,10 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:3001/",
+  "proxy": "http://localhost:3002/",
   "dependencies": {
     "axios": "^0.18.0",
+    "bootstrap": "^4.3.1",
     "classnames": "^2.2.6",
     "create-react-class": "^15.6.3",
     "react": "^16.8.6",

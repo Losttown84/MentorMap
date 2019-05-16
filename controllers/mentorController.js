@@ -1,6 +1,7 @@
 const db = require('../models');
 
 module.exports = {
+  
     findAll(req, res) {
         db.User.find(req.query)
             .then(dbUsers => res.json(dbUsers))
@@ -32,5 +33,4 @@ module.exports = {
             .catch((err) => console.log(err));
         }
     }
-    const styledcode = { color: "red", backgroundColor: "white" }
-    {styledcode}
+   
