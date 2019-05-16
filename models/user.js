@@ -70,30 +70,6 @@ const UserSchema = new Schema ({
     }]
 });
 
-<<<<<<< HEAD
-UserSchema.methods = {
-	checkPassword: function (inputPassword) {
-		return bcrypt.compareSync(inputPassword, this.password)
-	},
-	hashPassword: plainTextPassword => {
-		return bcrypt.hashSync(plainTextPassword, 10)
-	}
-}
-
-// Define hooks for pre-saving
-UserSchema.pre('save', function (next) {
-	if (!this.password) {
-		console.log('models/user.js =======NO PASSWORD PROVIDED=======')
-		next()
-	} else {
-		console.log('models/user.js hashPassword in pre save');
-		
-		this.password = this.hashPassword(this.password)
-		next()
-	}
-})
-
-=======
 // Check to see if the user is being created or modified. If so, we will hash the password, 
 // if not we will skip hashing.
 UserSchema.pre('save', function (next) {
@@ -108,7 +84,6 @@ UserSchema.pre('save', function (next) {
 UserSchema.methods.comparePassword = function(plaintext, cb) {
     return cb(null, bcrypt.compareSync(plaintext, this.password));
 };
->>>>>>> d5e542f7806fb5a8b968030e8fd81485b2e8d71f
 
 let User = mongoose.model('User', UserSchema);
 
