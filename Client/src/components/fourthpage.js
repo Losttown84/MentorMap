@@ -64,11 +64,7 @@ class Fourth extends React.Component {
             
                             <input type="text" name="Name" id="Name" placeholder="Full Name" required/>
                     
-                            <input type="text" name="City" id="City" placeholder="City" required/>
-        
                             <input type="text" name="Email" id="Email" placeholder="Email" required/>
-    
-                            <input type="text" name="Phone" id="Phone" placeholder="Phone" required/>
                     
                             <textarea name="Message" rows="20" cols="20" id="Message1" placeholder="Message" required></textarea>
     

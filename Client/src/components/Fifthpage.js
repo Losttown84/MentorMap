@@ -1,6 +1,5 @@
 import React from "react";
 import Cards from "./Cards";
-import InfiniteScroll from 'react-infinite-scroller';
 
 
 class Fifth extends React.Component {

@@ -17,7 +17,8 @@ class Cards extends React.Component {
             <Card.Text>
              About 
             </Card.Text>
-            <button id="button5" type="submit" className="btn btn-light">Go somewhere</button>
+            <button id="button5" type="submit" className="btn btn-light">Profile</button>
+            <button id="button5" type="submit" className="btn btn-light">Schedule a Session</button>
          </Card.Body>
        </Card>
        </div>

@@ -22,8 +22,10 @@ class First extends React.Component {
               <div id="aboutbox" className="jumbotron jumbotron-fluid">
                 <div className="container">
                 <ControlledCarousel></ControlledCarousel>
+                
                   <h1 className="display-4">What is MentorMap?</h1>
-                  <p className="lead">
+                  <div className="lead">
+                  <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Vitae eligendi odit sequi doloremque enim autem deserunt
                     quod facilis provident, sapiente esse est eos dolor neque
@@ -33,6 +35,7 @@ class First extends React.Component {
                     sapiente esse est eos dolor neque quam minus fugit error.
                     Repellendus!
                   </p>
+                  </div>
                 </div>
               </div>
             </div>
