@@ -7,7 +7,7 @@ const Schema = mongoose.Schema;
 const UserSchema = new Schema ({
     username: {
         type: String,
-        unique: true
+        // unique: true
     },
     password: {
         type: String,
@@ -17,7 +17,7 @@ const UserSchema = new Schema ({
     },
     email: {
         type: String,
-        unique: true,
+        // unique: true,
         match: [/.+@.+\..+/, 'Please enter a valid e-mail address'] 
     },
     online: {

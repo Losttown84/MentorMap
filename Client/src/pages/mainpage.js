@@ -1,8 +1,18 @@
 import React from "react";
-import ControlledCarousel from "./Carolusel";
+import axios from "axios";
+import Example from "../components/signin";
 
-class First extends React.Component {
+class Mainpage extends React.Component {
   render() {
+
+    const dummylogin = {
+      username: "testinfinity@infinity.com",
+      password: "1234abcddd"
+    }
+    axios.post("http://localhost:3002/signup", dummylogin).then(function(data) {
+      console.log("this is what we got back", data);
+    })
+    
     return (
       <div>
         <section id="about">
@@ -10,22 +20,18 @@ class First extends React.Component {
             MENTORMAP
           </h1>
           <div id="about-bg-diagnal" />
-          <div className="container">
+          <div className="container"/>
+          <div className="signInStyle">
+          <Example></Example>
           </div>
-        
         </section>
-
         <section id="sectionTwo">
-        <br></br><br></br><br></br>
           <div className="container">
             <div className="row">
               <div id="aboutbox" className="jumbotron jumbotron-fluid">
                 <div className="container">
-                <ControlledCarousel></ControlledCarousel>
-                
                   <h1 className="display-4">What is MentorMap?</h1>
-                  <div className="lead">
-                  <p>
+                  <p className="lead">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Vitae eligendi odit sequi doloremque enim autem deserunt
                     quod facilis provident, sapiente esse est eos dolor neque
@@ -35,7 +41,6 @@ class First extends React.Component {
                     sapiente esse est eos dolor neque quam minus fugit error.
                     Repellendus!
                   </p>
-                  </div>
                 </div>
               </div>
             </div>
@@ -49,4 +54,4 @@ class First extends React.Component {
   }
 }
 
-export default First;
+export default Mainpage;
