@@ -1,6 +1,6 @@
 import React from "react";
 
-class Second extends React.Component {
+class Session extends React.Component {
   render() {
     return (
       <div>
@@ -174,4 +174,4 @@ class Second extends React.Component {
   }
 }
 
-export default Second;
+export default Session;
