@@ -11,8 +11,9 @@ class App extends React.Component {
       <div>
         <Switch>
           <Route exact path ='/' component={First}/>
-          <Route path ='/mentors' component={Second}/>
-          <Route exact path ='/search' component={Third}/>
+          <Route path ='/createprofile' component={Second}/>
+          <Route path ='/mentor' component={Second}/>
+          <Route exact path ='/profile/:id' component={Third}/>
         </Switch>
       </div>
     )
