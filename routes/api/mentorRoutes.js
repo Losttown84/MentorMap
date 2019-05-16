@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const mentorController = require('../../controllers/mentorController');
+const sessionController = require('../../controllers/sessionController');
 const passport = require('../../passport');
 const db = require('../../models');
 
@@ -15,6 +16,10 @@ router
     
 router 
     .get('/mentee/:id', mentorController.findById)
+
+router 
+    .post('/session', sessionController.createSession)   
+
     
 router
     .post('/signup', (req, res) => {
