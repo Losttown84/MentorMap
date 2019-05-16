@@ -18,6 +18,10 @@
       "password": null,
       "database": "database_production",
       "host": "127.0.0.1",
-      "dialect": "mongodb"
+      "dialect": "mongodb",
+      "scripts": {
+        "start": "node server.js",
+        "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+    }
     }
   }
