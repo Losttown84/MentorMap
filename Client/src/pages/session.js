@@ -33,6 +33,11 @@ class Session extends React.Component {
                 Sign In
               </a>
             </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/Favorites">
+              <i class="fas fa-heart"></i>
+              </a>
+            </li>
           </ul>
           <form className="form-inline">
             <input
