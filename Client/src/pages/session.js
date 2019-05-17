@@ -1,5 +1,5 @@
 import React from "react";
-import {DatePicker, DatePicker1, DatePickerLabel, DatePickerSelector} from "./DatePicker";
+import {DatePicker, DatePicker1, DatePickerLabel, DatePickerSelector} from "../components/DatePicker";
 
 
 class Session extends React.Component {

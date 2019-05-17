@@ -57,7 +57,7 @@ export default class Example extends React.Component {
     console.log('state!', this.state)
     return (
       <div>
-        <Nav tabs>
+        <Nav tabs className="signup2">
           <NavItem>
             <NavLink
               className={classnames({ active: this.state.activeTab === '1' })}

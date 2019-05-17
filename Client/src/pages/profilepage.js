@@ -1,8 +1,8 @@
 import React from "react";
-import Cards from "./Cards";
+import Cards from "../components/Cards";
 
 
-class Fifth extends React.Component {
+class CreatePro extends React.Component {
     render() {
         return (
 
@@ -60,4 +60,4 @@ class Fifth extends React.Component {
         )
     }}
 
-export default Fifth; 
+export default CreatePro; 

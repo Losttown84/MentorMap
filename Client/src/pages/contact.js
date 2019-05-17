@@ -1,7 +1,7 @@
 import React from "react";
 
 
-class Fourth extends React.Component {
+class Contact extends React.Component {
     render() {
         return (
 <div className="background">
@@ -79,4 +79,4 @@ class Fourth extends React.Component {
         )
     }}
   
-    export default Fourth;
+    export default Contact;

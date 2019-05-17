@@ -1,7 +1,7 @@
 import React from "react";
 
 
-class Sixth extends React.Component {
+class Profile extends React.Component {
 render() {
     return (
 <div>
@@ -28,4 +28,4 @@ render() {
     )
 }}
 
-export default Sixth;
+export default Profile;

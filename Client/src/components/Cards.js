@@ -10,7 +10,7 @@ class Cards extends React.Component {
  <div>
    <div className="container">
    <div className="row">
-      <Card className="Card" style={{ width: '30rem' }}>
+      <Card className="Card3" style={{ width: '30rem' }}>
             <Image src="holder.js/171x180" rounded />
          <Card.Body>
             <Card.Title>Full Name</Card.Title>
