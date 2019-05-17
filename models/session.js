@@ -1,22 +1,13 @@
 const mongoose = require("mongoose");
-let Schema = mongoose.Schema;
+const Schema = mongoose.Schema;
 
 
 let SessionSchema = new Schema({
-    interest: {
-        type: String
-    },
-  virtualSession: {
-    type: Boolean,
-    default: null
+  mentor: {
+    type: String
   },
-  inPerson: {
-    type: Boolean,
-    default: null
-  },
-  both: {
-    type: Boolean,
-    default: null
+  location: {
+    type: String
   },
   date: {
     type: Date

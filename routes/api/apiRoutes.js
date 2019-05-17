@@ -4,12 +4,15 @@ const sessionController = require('../../controllers/sessionController');
 const passport = require('../../passport');
 const db = require('../../models');
 
-
-router  
-    .get('/mentor', mentorController.findMentors)
+// mentor routing
+router 
+    .route('/mentor')
+    .get(mentorController.findMentors)
+    .post(mentorController)
 
 router
-    .get('/mentor/:id', mentorController.findById)    
+    .route('/mentor/:id')
+    .get(mentorController.findById)    
     
 router  
     .get('/mentee', mentorController.findMentee)
@@ -17,10 +20,13 @@ router
 router 
     .get('/mentee/:id', mentorController.findById)
 
+// session routing
 router 
-    .post('/session', sessionController.createSession)   
+    .route('/session')
+    .post(sessionController.createSession)   
+    .get(sessionController.findSession)
 
-    
+// login/auth routes
 router
     .post('/signup', (req, res) => {
         console.log('user signup');

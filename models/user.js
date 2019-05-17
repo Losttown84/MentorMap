@@ -71,6 +71,10 @@ const UserSchema = new Schema ({
     chat: [{
         type: Schema.Types.ObjectId,
         ref: 'Chat'
+    }],
+    sessions: [{
+        type: Schema.Types.ObjectId,
+        ref: 'Session'
     }]
 });
 
