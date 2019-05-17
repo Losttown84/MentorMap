@@ -34,11 +34,11 @@ export default class Example extends React.Component {
       password: this.state.password
     }
     if (this.state.activeTab === '1') {
-      axios.post('http://localhost:3001/login', loginStuff).then(function(data) {
+      axios.post('/api/login', loginStuff).then(function(data) {
         console.log('we got this back!!!', data);
       })
     } else if(this.state.activeTab === '2') {
-      axios.post('http://localhost:3001/signup', loginStuff).then(function(data) {
+      axios.post('/api/signup', loginStuff).then(function(data) {
         console.log('we got this back!!!', data);
       })
     }

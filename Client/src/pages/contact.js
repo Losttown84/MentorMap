@@ -1,7 +1,32 @@
 import React from "react";
+import API from "../utils/API";
 
 
 class Contact extends React.Component {
+
+    state = {
+        fullName: '',
+        email: '',
+        message: ''
+    }
+
+    handleInputChange = event => {
+        const { name, value } = event.target;
+        this.setState({
+        [name]: value
+        });
+    }
+
+    handleFormSubmit = event => {
+        event.preventDefault();
+        if (this.state.email && this.state.message) {
+            API.saveContact({
+                fullName: this.state.fullName,
+                email: this.state.email,
+                message: this.state.message
+            })
+        }
+    }
     render() {
         return (
 <div className="background">
@@ -33,26 +58,12 @@ class Contact extends React.Component {
                     </a>
                     </li>
                 </ul>
-                <form className="form-inline">
-                    <input
-                    className="form-control mr-sm-2"
-                    type="search"
-                    placeholder="Postal Code"
-                    aria-label="Search"
-                    />
-                    <button
-                    className="btn btn-outline-success my-2 my-sm-0"
-                    type="submit"
-                    >
-                    Search
-                    </button>
-                </form>
                 </div>
             </nav>
             <div id="container">
             <div id="contact">
      
-            <p class="about">Contact us if you have any questions or concerns </p>
+            <p className="about">Contact us if you have any questions or concerns </p>
     
             </div>   
      
@@ -62,13 +73,13 @@ class Contact extends React.Component {
                         <form method="post">
     
             
-                            <input type="text" name="Name" id="Name" placeholder="Full Name" required/>
+                            <input value={this.state.fullName} onChange={this.handleInputChange} type="text" name="Name" id="Name" placeholder="Full Name" required/>
                     
-                            <input type="text" name="Email" id="Email" placeholder="Email" required/>
+                            <input value={this.state.email} onChange={this.handleInputChange} type="text" name="Email" id="Email" placeholder="Email" required/>
                     
-                            <textarea name="Message" rows="20" cols="20" id="Message1" placeholder="Message" required></textarea>
+                            <textarea value={this.state.message} onChange={this.handleInputChange} name="Message" rows="20" cols="20" id="Message1" placeholder="Message" required></textarea>
     
-                            <input type="submit" name="submit" value="Submit" class="submit-button"/>
+                            <input disabled={!(this.state.email && this.state.message)} onClick={this.handleFormSubmit} type="submit" name="submit" value="Submit" className="submit-button"/>
                         </form>
                     </div>
                 </div>

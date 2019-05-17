@@ -4,7 +4,7 @@ const sessionController = require('../../controllers/sessionController');
 const passport = require('../../passport');
 const db = require('../../models');
 
-// mentor routing
+// mentor routes
 router 
     .route('/mentor')
     .get(mentorController.findMentors)
@@ -22,9 +22,22 @@ router
 
 // session routing
 router 
-    .route('/session')
+    .route('/createsession')
     .post(sessionController.createSession)   
     .get(sessionController.findSession)
+
+router
+    .post('/contact', (req, res) => {
+            db.Contact.create({
+                fullName: req.body.fullName,
+                email: req.body.email,
+                message: req.body.message
+            })
+            .then(contact => res.json(contact))
+            .catch(err => res.status(422).json(err));
+        }) 
+
+
 
 // login/auth routes
 router
@@ -37,7 +50,7 @@ router
         //const password = '123456ABC'
         
         // ADD VALIDATION
-        User.findOne({ username: username }, (err, user) => {
+        db.User.findOne({ username: username }, (err, user) => {
             if (err) {
                 console.log('User.js post error: ', err)
             } else if (user) {

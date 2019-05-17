@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch, Route} from 'react-router-dom';
 import './App.css';
 
-import Profile from './pages/profile';
+import Profile from './components/profile';
 import Mainpage from './pages/mainpage';
 import Session from './pages/session';
 import Search from './pages/createProfile';
