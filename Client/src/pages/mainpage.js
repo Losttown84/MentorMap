@@ -1,6 +1,6 @@
 import React from "react";
 import ControlledCarousel from "../components/Carolusel";
-import Example from "../components/signin";
+import {Animated} from "react-animated-css";
 
 
 class First extends React.Component {
@@ -8,27 +8,31 @@ class First extends React.Component {
     return (
       <div>
         <section id="about">
-          <h1 id="titlename" className="animated jackInTheBox delay-2s">
+        <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}>
+             <h1 id="titlename">
             MENTORMAP
-          </h1>
+          </h1> 
+          </Animated>
+         
           
-          <div id="about-bg-diagnal" /><Example className="Signupbox"></Example>
+          <div id="about-bg-diagnal" />
           <div className="container">
           </div>
         
         </section>
 
         <section id="sectionTwo">
-        <br></br><br></br><br></br>
+        <br></br><br></br><br></br><br></br><br></br>
           <div className="container">
             <div className="row">
               <div id="aboutbox" className="jumbotron jumbotron-fluid">
                 <div className="container">
                 <ControlledCarousel></ControlledCarousel>
-                
+                </div>
+                <div id="diplay-4" className="row">
                   <h1 className="display-4">What is MentorMap?</h1>
                   <div className="lead">
-                  <p>
+                  <p className="mainabout">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Vitae eligendi odit sequi doloremque enim autem deserunt
                     quod facilis provident, sapiente esse est eos dolor neque
@@ -45,7 +49,7 @@ class First extends React.Component {
           </div>
         </section>
         <footer>
-          <a href="./contact">got any questions?</a>
+          <a class="contact" href="./contact">got any questions?</a>
         </footer>
       </div>
     );

@@ -1,16 +1,4 @@
-body {
- 
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color:#57737A;
-  color: white;
-  border: none;
-}
+
 .where{
   margin-top: 10px;
 }
@@ -24,9 +12,6 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   border: none;
@@ -391,7 +376,29 @@ background-attachment: fixed;
   color: white;
   text-align: center;
   margin: 40px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border: none;
+  background: -webkit-radial-gradient(top, ellipse cover,  cadetblue .5%,#57737A 99.5%); /* Chrome10+,Safari5.1+ */
+  background-attachment: fixed;
   
+}
+.display-4{
+  margin-left: 20px;
+  text-align: center;
+}
+.d-block{
+  margin-top: 30px;
+}
+.mainabout{
+  margin-left: 20px;
+  text-align: initial;
+}
+.contact:hover{
+color: rgba(0,0,0,0.5);
+}
+section{
+  background: transparent;
 }
 #sectionTwo{
   height: 700px;
@@ -531,8 +538,6 @@ text-decoration: none;
       text-decoration: none;
       }
 
-
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,900,300,100);
 
 .svg-icon {
   width: 1em;
@@ -728,25 +733,6 @@ input[type="email"]:focus {
   color: white;
 }
 
-#button3 {
-  background-color:rgba(0,0,0,0.25);
-  color: #ffffff;
-  border: 1px solid transparent;
-  box-shadow: 0 0 rgba(0, 0, 0, 0);
-  border-radius: 2px;
-  -webkit-transition: background-color 0.2s, box-shadow 0.2s, background-color 0.2s, border-color 0.2s, color 0.2s;
-  transition: background-color 0.2s, box-shadow 0.2s, background-color 0.2s, border-color 0.2s, color 0.2s;
-  background-color:rgba(0,0,0,0.25);
-  border: 0;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.15) inset;
-}
-#button3:hover,
-#button3:focus {
-  background-color:cadetblue ;
-  color: #ffffff;
-  border-color: transparent;
-  box-shadow: 0 0 rgba(0, 0, 0, 0);
-}
 
 .btn-block {
   display: block;
@@ -787,19 +773,6 @@ input[type="email"]:focus {
   position: relative;
   overflow: hidden;
 }
-
-@media (min-width: 800px) {
-  h1 {
-    font-size: 3rem;
-  }
-  .hide-scrollbar {
-    height: 400px;
-  }
-  .gallery > * {
-    max-height: 400px;
-  }
-}
-
 .svg-icon path,
 .svg-icon polygon,
 .svg-icon rect {
@@ -942,7 +915,9 @@ input[type="email"]:focus {
   text-align:center;
   text-transform:uppercase;
 }
-
+.about{
+  margin-top: 170px;
+}
 #contact-wrap {
   font-size:16px;
   font-weight:300;
@@ -951,6 +926,8 @@ input[type="email"]:focus {
   overflow:auto; 
 float:left;
 background: transparent;
+margin-top: 150px;
+margin-left: 30px;
 }
 
 #contact-area {
@@ -1006,30 +983,22 @@ textarea:focus, #contact-area input:focus {
 }
 
 #contact-area input.submit-button {
-  font-family: 'Lato', calibri, arial;
-  font-size:12px;
-  font-weight:300;
-  text-transform:uppercase;
-  width: 100px;
-  float: left;
-  background-color:transparent;
-  border-top: 1px solid #fff;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  border-right: 1px solid #fff;
   background-color: cadetblue;
-      -moz-transition:all 0.1s ease-in-out;
-  -webkit-transition:all 0.1s ease-in-out;
-  -o-transition:all 0.1s ease-in-out;
-  -ms-transition:all 0.1s ease-in-out;
-  transition:all 0.1s ease-in-out;
+  color: #ffffff;
+  border: 0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.15) inset;
+  border-radius: 2px;
+  width: 100px;
+  margin-top: 20px;
 }
 
 #contact-area input.submit-button:hover {
-
-  color:#fff;
   background-color:rgba(0,0,0,0.25);
-
+  border: 1px solid transparent;
+  box-shadow: 0 0 rgba(0, 0, 0, 0);
+  border-radius: 2px;
+  -webkit-transition: background-color 0.2s, box-shadow 0.2s, background-color 0.2s, border-color 0.2s, color 0.2s;
+  transition: background-color 0.2s, box-shadow 0.2s, background-color 0.2s, border-color 0.2s, color 0.2s;
 }
 
 .label {

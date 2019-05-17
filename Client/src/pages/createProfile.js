@@ -64,7 +64,7 @@ class Search extends React.Component {
               <div class="avatar"><label>Select your Profile Picture: </label><input type="file" name="avatar" accept="image/*" required /></div>
               <br></br>
 
-              <input type="submit" value="Register" name="register" id="button3" class="btn btn-block btn-light" />
+              <input type="submit" value="Register" name="register" id="button5" class="btn btn-block btn-light" />
             </form>
           </div>
         </div>
