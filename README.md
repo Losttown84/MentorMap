@@ -15,6 +15,8 @@ Technology
 * Node
 * ReactStrap
 * Axios
+* Bcrypt
+* Passport
 * Aninmate.css
 
 Team Members
