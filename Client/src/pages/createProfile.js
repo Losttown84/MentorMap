@@ -40,7 +40,7 @@ class Search extends React.Component {
               <div class="alert alert-error"></div>
               <label>Full Name</label>
               <input type="text" placeholder="Full Name" name="username" required />
-              <label>Tell us About yourself! (Intrests.. etc)</label>
+              <label>Tell us about yourself! What professional experience do you have? What kind of mentorship are you seeking?</label>
               <textarea name="message" placeholder="About you!" rows="4" cols="30" required/>
               <label><i class="fab fa-linkedin"></i> Account Username</label>
               <input type="text" placeholder="Username"></input>
