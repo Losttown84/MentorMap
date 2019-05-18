@@ -1179,3 +1179,33 @@ ul.signup2{
   visibility: visible;
   opacity: 1;
 }
+/* Bootstrap grid small < 992px */
+@media only screen and (max-width: 992px) {
+  #nav-category {
+    visibility: hidden;
+    max-width: 2px;
+  }
+  #sidenav-category {
+    visibility: visible;
+  }
+  #search-btn {
+    visibility: hidden;
+    max-width: 2px;
+  }
+}
+
+/* Bootstrap grid extra small < 768px */
+@media only screen and (max-width: 767px) {
+  
+  #nav-category {
+    visibility: visible;
+    max-width: 100%;
+  }
+  #sidenav-category {
+    visibility: hidden;
+  }
+  #search-btn {
+    visibility: visible;
+    max-width: 100%;
+  }
+}
