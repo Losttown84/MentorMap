@@ -9,14 +9,11 @@ class Mainpage extends React.Component {
       <div>
 
         <section id="about">
-  
-        <Animated className="login-form" animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}>
-           <div className="row">
-    <img className="logo" src={Logo}></img>
-    </div>
+ 
+        <Animated className="login-form" animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}> 
+       <img className="logo" src={Logo}></img>
     </Animated>
-    <div className="row">
-          <form className="login-form">
+          <form id="login-form" className="login-form">
           <label>Email</label><br></br>
           <input type="text"  placeholder="Enter Email" id="loginEmail" />
         <br></br>
@@ -25,10 +22,9 @@ class Mainpage extends React.Component {
         <br></br>
          <button type="submit" id="button5">log in</button>
         <br></br>
-          <button className="message" type="submit" href="/mentor" id="#button5">Not Registered? Signup</button>
+          <button className="message" type="submit" href="/mentor" id="button5">Not Registered? Signup</button>
           </form>
-            </div>
-          <div id="about-bg-diagnal" />        
+         <div id="about-bg-diagnal"/>
         </section>
 
         <section id="sectionTwo">

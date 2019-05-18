@@ -329,9 +329,14 @@ box-container{
   .register-form {
   display: none;
   }
-  #mainrow.row{
-    max-width: 300px;
-  }
+#login-form.login-form{
+  max-width: 300px;
+  max-height: 300px;
+  float: left;
+  position:absolute;
+  margin-top: 320px;
+  margin-left: 250px;
+}
   .links1 {
   color: white;
   margin-left: 5px;
@@ -348,7 +353,6 @@ box-container{
       display: none;
   }
   #about-bg-diagnal{
-
 background-image: url(./components/Images/map.jpg);
 background-repeat: no-repeat;
 border-left: 200px solid white;
@@ -360,7 +364,7 @@ clip-path: polygon(58% 0, 100% 0%, 100% 100%, 30% 100%);
 -o-background-size: cover;
 background-size: cover;
 background-attachment: fixed;
-
+margin: 0px 0px 0px 150px; 
   }
 #profilebox{
   width: 1200px;
@@ -740,16 +744,21 @@ input[type="email"]:focus {
 #title2{
   color: white;
 }
+
 .div.animated.bounceInLeft{
   max-width: 300px;
   float: left;
 }
 .login-form{
   max-width:300px ;
-  float: left;
+  margin-left: 100px;
+}
+#login-form{
+margin-left: 150px;
 }
 .logo{
-  max-width: 300px;
+
+  margin-left: 50px;
   max-height: 300px;
   float: left;
 }
@@ -959,7 +968,6 @@ margin-left: 30px;
 input, .message1 {
   padding: 5px;
   width: 450px;
-  font-family: 'Lato', calibri, arial;
   font-size:14px;
   font-weight:300;
   color:#fff;
@@ -971,7 +979,9 @@ input, .message1 {
   
   margin-bottom:15px;
 }
-
+.message{
+  margin-top: 5px;
+}
 textarea {
   height: 150px;
         background-color:transparent;
