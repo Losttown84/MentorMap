@@ -28,7 +28,7 @@ class Mainpage extends React.Component {
         <br></br>
          <button type="submit" id="button5">log in</button>
         <br></br>
-          <button className="message" type="submit" href="/mentor" id="button5">Not Registered? Signup</button>
+          <button className="message" type="submit" href="/signup" id="button5">Not Registered? Signup</button>
           </form>
          <div id="about-bg-diagnal"/>
         </section>
