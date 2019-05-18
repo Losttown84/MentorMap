@@ -5,7 +5,7 @@ const db = require('../models');
 
 mongoose.connect(
   process.env.MONGODB_URI ||
-  "mongodb://localhost/mentormap"
+  "mongodb://localhost:27017/mentormap"
 );
 
 const userSeed = [
@@ -159,15 +159,15 @@ const userSeed = [
     email: 'test10@gmail.com',
     online: true,
     dateCreated: new Date(Date.now()),
-    fullName: 'Mike Sharp',
-    mentee: true,
-    mentor: false,
+    fullName: 'Monroe Kelly',
+    mentee: false,
+    mentor: true,
     location: 'Chicago, IL',
-    industry: 'Business',
-    yrsExp: 1,
-    linkedin: 'menteeMike1',
+    industry: 'Music Producer',
+    yrsExp: 10,
+    linkedin: 'menteeMonroe1',
     img: 'https://images.pexels.com/photos/1707795/pexels-photo-1707795.jpeg?cs=srgb&dl=adult-art-beautiful-1707795.jpg&fm=jpg',
-    about: 'Hello, My Name is Mike! I am Software Developer. Seeking mentorship'
+    about: 'Hello, My Name is Monroe! I make music. Offering mentorship'
   },
   
 ];

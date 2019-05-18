@@ -60,18 +60,7 @@ const UserSchema = new Schema ({
     about: {
         type: String,
         max: 250 
-    },
-    savedMentors: [{
-        type: String
-    }],
-    chat: [{
-        type: Schema.Types.ObjectId,
-        ref: 'Chat'
-    }],
-    sessions: [{
-        type: Schema.Types.ObjectId,
-        ref: 'Session'
-    }]
+    }
 });
 
 // Check to see if the user is being created or modified. If so, we will hash the password, 
