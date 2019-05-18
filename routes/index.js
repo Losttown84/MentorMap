@@ -1,10 +1,10 @@
 const router = require('express').Router();
-const apiRoute = require('./api');
+const api = require('./api');
 const path = require('path');
 const express = require('express');
 const app = express();
 
-router.use('/api', apiRoute);
+router.use('/api', api);
 
 
 app.get("*", function(req, res) {

@@ -4,6 +4,12 @@ import {Animated} from "react-animated-css";
 import Logo from "../components/Images/logo.png";
 
 class Mainpage extends React.Component {
+  
+  state = {
+    email: '',
+    password: '',
+  }
+
   render() {
     return (
       <div>
@@ -26,7 +32,6 @@ class Mainpage extends React.Component {
           </form>
          <div id="about-bg-diagnal"/>
         </section>
-
         <section id="sectionTwo">
         <br></br><br></br><br></br><br></br><br></br>
           <div className="container">
@@ -39,14 +44,9 @@ class Mainpage extends React.Component {
                   <h1 className="display-4">What is MentorMap?</h1>
                   <div className="lead">
                   <p className="mainabout">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Vitae eligendi odit sequi doloremque enim autem deserunt
-                    quod facilis provident, sapiente esse est eos dolor neque
-                    quam minus fugit error. Repellendus! Lorem ipsum dolor sit
-                    amet consectetur adipisicing elit. Vitae eligendi odit sequi
-                    doloremque enim autem deserunt quod facilis provident,
-                    sapiente esse est eos dolor neque quam minus fugit error.
-                    Repellendus!
+                  MentorMap is something that can be utilized by people of differing age groups, whether it is someone struggling with high school algebra or grandma wanting to do a complicated cross stitch for needlework. A mentor is someone who you can rely on with their professional expertise, who can make achieving your goals easier. Our app will connect you with an expert in your trade, locally, in-person or virtually. Additionally, with your mentor, it’ll be a great way to network with a local professional to either find a new career or friend.
+<br></br><br></br>
+<i>The only mistake you can make is not asking for help - Sandeep Jauhar</i>
                   </p>
                   </div>
                 </div>
@@ -56,7 +56,7 @@ class Mainpage extends React.Component {
         </section>
         <br></br><br></br>
         <section className="footerpart">
-      
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
       <footer>
             <a class="contact" href="./contact">got any questions?</a>
     </footer>

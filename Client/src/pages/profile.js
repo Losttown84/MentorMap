@@ -2,6 +2,7 @@ import React from "react";
 
 
 class Profile extends React.Component {
+    
 render() {
     return (
 <div>
@@ -34,7 +35,7 @@ render() {
     <div className="row">
     <div id="profilebox" className="jumbotron jumbotron-fluid">
     <div class="card2">
-        <img class="card-img-top" src="" alt="Card image cap"/>
+        <img class="card-img-top" src="" alt="Card image cap" />
         <div class="card-body">
             <h5 class="card-title">Name</h5>
             <a href="/" class="card-link">LinkedIn</a>

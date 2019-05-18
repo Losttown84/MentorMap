@@ -17,7 +17,7 @@ const UserSchema = new Schema ({
     },
     email: {
         type: String,
-        // unique: true,
+        unique: true,
         match: [/.+@.+\..+/, 'Please enter a valid e-mail address'] 
     },
     online: {
@@ -28,12 +28,8 @@ const UserSchema = new Schema ({
         type: Date,
         default: Date.now
     },
-    firstName: {
+    fullName: {
         type: String, 
-        trim: true
-    },
-    lastName: {
-        type: String,
         trim: true
     },
     mentee: {
@@ -64,14 +60,7 @@ const UserSchema = new Schema ({
     about: {
         type: String,
         max: 250 
-    },
-    savedMentors: [{
-        type: String
-    }],
-    chat: [{
-        type: Schema.Types.ObjectId,
-        ref: 'Chat'
-    }]
+    }
 });
 
 // Check to see if the user is being created or modified. If so, we will hash the password, 

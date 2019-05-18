@@ -71,7 +71,7 @@ code {
     max-width: 300px;
     max-height: 300px;
   }
-  #loginEmail{
+  #loginUsername{
     max-width: 300px;
     max-height: 300px;
   }
@@ -86,7 +86,7 @@ code {
   .carousel{
    max-height: 100px;
    float: left;
-   margin-top: 70px;
+   margin-top: 150px;
   }
   .lead{
     float: right;

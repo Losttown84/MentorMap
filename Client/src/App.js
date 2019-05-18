@@ -8,7 +8,6 @@ import Session from './pages/session';
 import Signup from './pages/signup';
 import Contact from './pages/contact';
 import Search from './pages/search';
-import Fav from "./pages/Favorites";
 
 class App extends React.Component {
   render() {
@@ -22,7 +21,6 @@ class App extends React.Component {
           <Route path ='/createsession' component={Session}/>
           <Route path ='/signup' component={Signup}/>
           <Route exact path ='/profile/:id' component={Signup}/>
-          <Route exact path ="/favorites" component={Fav}/>
         </Switch>
       </div>
     )

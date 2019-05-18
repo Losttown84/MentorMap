@@ -4,12 +4,15 @@ const sessionController = require('../../controllers/sessionController');
 const passport = require('../../passport');
 const db = require('../../models');
 
-
-router  
-    .get('/mentor', mentorController.findMentors)
+// mentor routes
+router 
+    .route('/mentor')
+    .get(mentorController.findMentors)
+    .post(mentorController)
 
 router
-    .get('/mentor/:id', mentorController.findById)    
+    .route('/mentor/:id')
+    .get(mentorController.findById)    
     
 router  
     .get('/mentee', mentorController.findMentee)
@@ -17,10 +20,26 @@ router
 router 
     .get('/mentee/:id', mentorController.findById)
 
+// session routing
 router 
-    .post('/session', sessionController.createSession)   
+    .route('/createsession')
+    .post(sessionController.createSession)   
+    .get(sessionController.findSession)
 
-    
+router
+    .post('/contact', (req, res) => {
+            db.Contact.create({
+                fullName: req.body.fullName,
+                email: req.body.email,
+                message: req.body.message
+            })
+            .then(contact => res.json(contact))
+            .catch(err => res.status(422).json(err));
+        }) 
+
+
+
+// login/auth routes
 router
     .post('/signup', (req, res) => {
         console.log('user signup');
@@ -31,7 +50,7 @@ router
         //const password = '123456ABC'
         
         // ADD VALIDATION
-        User.findOne({ username: username }, (err, user) => {
+        db.User.findOne({ username: username }, (err, user) => {
             if (err) {
                 console.log('User.js post error: ', err)
             } else if (user) {

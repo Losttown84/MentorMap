@@ -1,7 +1,36 @@
 import React from "react";
+import API from "../utils/API";
+
 
 
 class Contact extends React.Component {
+
+    state = {
+        fullName: '',
+        email: '',
+        message: ''
+    };
+
+    handleInputChange = event => {
+        const { fullName, email, message } = event.target;
+        this.setState({
+        fullName: fullName,
+        email: email,
+        message: message
+        })
+    }
+
+    handleFormSubmit = event => {
+        event.preventDefault();
+        if (this.state.email && this.state.message) {
+            API.saveContact({
+                fullName: this.state.fullName,
+                email: this.state.email,
+                message: this.state.message
+            })
+        
+        }
+    }
     render() {
         return (
 <div className="background">
@@ -32,23 +61,22 @@ class Contact extends React.Component {
             <div id="container">
             <div id="contact">
      
-            <p class="about">Contact us if you have any questions or concerns </p>
+            <p className="about">Contact us if you have any questions or concerns </p>
     
             </div>   
      
             <div id="contact-wrap">   
                     <div id="contact-area">
                 
-                        <form method="post">
-    
-            
-                            <input type="text" name="Name" id="Name" placeholder="Full Name" required/>
+                        <form onSubmit={this.handleFormSubmit}>
                     
-                            <input type="text" name="Email" id="Email" placeholder="Email" required/>
+                            <input value={this.state.name} onChange={this.handleInputChange} type="text" name="name" id="name" placeholder="Full Name (required)" required/>
+
+                            <input value={this.state.email} onChange={this.handleInputChange} type="text" name="Email" id="Email" placeholder="Email (required)" required/>
                     
-                            <textarea name="Message" rows="20" cols="20" id="Message1" placeholder="Message" required></textarea>
+                            <textarea value={this.state.message} onChange={this.handleInputChange} name="Message" rows="20" cols="20" id="Message1" placeholder="Message" required></textarea>
     
-                            <input type="submit" name="submit" value="Submit" class="submit-button"/>
+                            <input disabled={(!this.state.email && !this.state.message)} type="submit" name="submit" value="Submit" className="submit-button"/>
                         </form>
                     </div>
                 </div>
