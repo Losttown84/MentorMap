@@ -2,6 +2,7 @@ import React from "react";
 import API from "../utils/API";
 
 
+
 class Contact extends React.Component {
 
     state = {
@@ -74,11 +75,10 @@ class Contact extends React.Component {
                     <div id="contact-area">
                 
                         <form onSubmit={this.handleFormSubmit}>
-    
-            
-                            <input value={this.state.fullName} onChange={this.handleInputChange} type="text" name="Name" id="Name" placeholder="Full Name" required/>
                     
-                            <input value={this.state.email} onChange={this.handleInputChange} type="text" name="Email" id="Email" placeholder="Email" required/>
+                            <input value={this.state.name} onChange={this.handleInputChange} type="text" name="name" id="name" placeholder="Full Name (required)" required/>
+
+                            <input value={this.state.email} onChange={this.handleInputChange} type="text" name="Email" id="Email" placeholder="Email (required)" required/>
                     
                             <textarea value={this.state.message} onChange={this.handleInputChange} name="Message" rows="20" cols="20" id="Message1" placeholder="Message" required></textarea>
     
