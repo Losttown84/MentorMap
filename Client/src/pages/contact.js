@@ -8,13 +8,15 @@ class Contact extends React.Component {
         fullName: '',
         email: '',
         message: ''
-    }
+    };
 
     handleInputChange = event => {
-        const { name, value } = event.target;
+        const { fullName, email, message } = event.target;
         this.setState({
-        [name]: value
-        });
+        fullName: fullName,
+        email: email,
+        message: message
+        })
     }
 
     handleFormSubmit = event => {
@@ -25,6 +27,7 @@ class Contact extends React.Component {
                 email: this.state.email,
                 message: this.state.message
             })
+        
         }
     }
     render() {
@@ -70,7 +73,7 @@ class Contact extends React.Component {
             <div id="contact-wrap">   
                     <div id="contact-area">
                 
-                        <form method="post">
+                        <form onSubmit={this.handleFormSubmit}>
     
             
                             <input value={this.state.fullName} onChange={this.handleInputChange} type="text" name="Name" id="Name" placeholder="Full Name" required/>
@@ -79,7 +82,7 @@ class Contact extends React.Component {
                     
                             <textarea value={this.state.message} onChange={this.handleInputChange} name="Message" rows="20" cols="20" id="Message1" placeholder="Message" required></textarea>
     
-                            <input disabled={!(this.state.email && this.state.message)} onClick={this.handleFormSubmit} type="submit" name="submit" value="Submit" className="submit-button"/>
+                            <input disabled={(!this.state.email && !this.state.message)} type="submit" name="submit" value="Submit" className="submit-button"/>
                         </form>
                     </div>
                 </div>

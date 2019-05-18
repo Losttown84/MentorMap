@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch, Route} from 'react-router-dom';
 import './App.css';
 
-import Profile from './components/profile';
+import Profile from './pages/profile';
 import Mainpage from './pages/mainpage';
 import Session from './pages/session';
 import Search from './pages/createProfile';
@@ -17,7 +17,7 @@ class App extends React.Component {
           <Route exact path ='/contact' component={Contact}/>
           <Route exact path ='/profile' component={Profile}/>
           <Route exact path ='/findmentor' component={CreatePro}/>
-          <Route exact path ='/signup' component={Mainpage}/>
+          <Route exact path ='/' component={Mainpage}/>
           <Route path ='/createsession' component={Session}/>
           <Route path ='/mentor' component={Search}/>
           <Route exact path ='/profile/:id' component={Search}/>
