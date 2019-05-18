@@ -15,8 +15,9 @@ render() {
             <h5 class="card-title">Name</h5>
             <a href="/" class="card-link">LinkedIn</a>
             <br></br>
+            <a href="/favorites" id="tooltip2"><i id="heart" class="fas fa-heart"><span class="tooltiptext">Favorites</span></i></a>
+            <br></br><br></br><br></br>
             <button id="button5" type="submit" className="btn btn-light">Schedule a Session</button>
-        
         </div>
     </div>
 <p className="paraProfile">This is where the about me goes!</p>

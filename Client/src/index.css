@@ -367,6 +367,9 @@ background-attachment: fixed;
 margin: 0px 0px 0px 150px; 
 height: 880px;
   }
+  #footer{
+    position: bottom sticky;
+  }
   .favmen{
     color: white;
   }
@@ -1096,7 +1099,52 @@ ul.signup2{
   display: inline-block;
 }
 
+#tooltip2{
+  position: relative;
+  display: inline-block;
+}
 
+
+#tooltip2 .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgba(0,0,0,0.25);
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  top: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+
+#tooltip2 .tooltiptext::after {
+  content: "";
+  top: 100%;
+  right: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+#tooltip2:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+#heart{
+  color: white;
+}
+#heart:hover{
+  color: rgba(0,0,0,0.25);
+}
 #tooltip .tooltiptext {
   visibility: hidden;
   width: 120px;
