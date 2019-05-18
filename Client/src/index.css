@@ -365,7 +365,14 @@ clip-path: polygon(60% 0, 100% 0%, 100% 100%, 20% 100%);
 background-size: cover;
 background-attachment: fixed;
 margin: 0px 0px 0px 150px; 
-height: 900px;
+height: 880px;
+  }
+  .favmen{
+    color: white;
+  }
+  .cardfav{
+    margin-left: 400px;
+    margin-top: 60px;
   }
 #profilebox{
   width: 1200px;
