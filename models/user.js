@@ -17,7 +17,7 @@ const UserSchema = new Schema ({
     },
     email: {
         type: String,
-        // unique: true,
+        unique: true,
         match: [/.+@.+\..+/, 'Please enter a valid e-mail address'] 
     },
     online: {
@@ -28,12 +28,8 @@ const UserSchema = new Schema ({
         type: Date,
         default: Date.now
     },
-    firstName: {
+    fullName: {
         type: String, 
-        trim: true
-    },
-    lastName: {
-        type: String,
         trim: true
     },
     mentee: {

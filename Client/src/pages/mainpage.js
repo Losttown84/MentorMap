@@ -4,12 +4,17 @@ import {Animated} from "react-animated-css";
 import Logo from "../components/Images/logo.png";
 
 class Mainpage extends React.Component {
+  
+  state = {
+    email: '',
+    password: '',
+  }
+
   render() {
     return (
       <div>
 
-        <section id="about">
-  
+        <section id="about-bg-diagnal" >
         <Animated className="login-form" animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}>
            <div className="row">
     <img className="logo" src={Logo}></img>
@@ -17,8 +22,8 @@ class Mainpage extends React.Component {
     </Animated>
     <div className="row">
           <form className="login-form">
-          <label>Email</label><br></br>
-          <input type="text"  placeholder="Enter Email" id="loginEmail" />
+          <label>Username</label><br></br>
+          <input type="text"  placeholder="Enter Username" id="loginUsername" />
         <br></br>
           <label>Password</label><br></br>
           <input type="password"  placeholder="Enter Password" id="loginPassword"/>
@@ -28,9 +33,8 @@ class Mainpage extends React.Component {
           <button className="message" type="submit" href="/mentor" id="#button5">Not Registered? Signup</button>
           </form>
             </div>
-          <div id="about-bg-diagnal" />        
+          <div/>        
         </section>
-
         <section id="sectionTwo">
         <br></br><br></br><br></br><br></br><br></br>
           <div className="container">
