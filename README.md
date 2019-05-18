@@ -20,8 +20,10 @@ Technology
 Team Members
 ============
 Project-Lead, BackEnd: [Tiffani Dominguez](https://github.com/TiffaniD3)
+
 Front-End: [Yagmur Guzeldereli](https://github.com/itsjustyagmur)
-Project-Lead, BackEnd: [Mike Plass](https://github.com/Losttown84)
+
+Quality Manager: [Mike Plass](https://github.com/Losttown84)
 
 
 
