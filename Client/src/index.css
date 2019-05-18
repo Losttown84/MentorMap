@@ -334,7 +334,7 @@ box-container{
   max-height: 300px;
   float: left;
   position:absolute;
-  margin-top: 320px;
+  margin-top: 360px;
   margin-left: 250px;
 }
   .links1 {
@@ -357,14 +357,15 @@ background-image: url(./components/Images/map.jpg);
 background-repeat: no-repeat;
 border-left: 200px solid white;
 border-top: 700px solid transparent;
--webkit-clip-path: polygon(58% 0, 100% 0%, 100% 100%, 30% 100%);
-clip-path: polygon(58% 0, 100% 0%, 100% 100%, 30% 100%);
+-webkit-clip-path: polygon(100% 0, 100% 0%, 100% 100%, 40% 100%);
+clip-path: polygon(60% 0, 100% 0%, 100% 100%, 20% 100%);
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
 background-attachment: fixed;
 margin: 0px 0px 0px 150px; 
+height: 900px;
   }
 #profilebox{
   width: 1200px;
@@ -757,7 +758,7 @@ input[type="email"]:focus {
 margin-left: 150px;
 }
 .logo{
-
+margin-top: 30px;
   margin-left: 50px;
   max-height: 300px;
   float: left;
@@ -945,6 +946,7 @@ margin-left: 150px;
 }
 .about{
   margin-top: 170px;
+  max-height: 9000px;
 }
 #contact-wrap {
   font-size:16px;
