@@ -2,14 +2,8 @@
 .where{
   margin-top: 10px;
 }
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
 body {
-  height: 100%;
-  width: 100%;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
@@ -73,6 +67,14 @@ code {
   img {
   margin-bottom: 20px;
   }
+  #loginPassword{
+    max-width: 300px;
+    max-height: 300px;
+  }
+  #loginEmail{
+    max-width: 300px;
+    max-height: 300px;
+  }
   .wrapper5 {
     display: flex;
     width: 100%;
@@ -84,6 +86,7 @@ code {
   .carousel{
    max-height: 100px;
    float: left;
+   margin-top: 70px;
   }
   .lead{
     float: right;
@@ -326,7 +329,9 @@ box-container{
   .register-form {
   display: none;
   }
-  
+  #mainrow.row{
+    max-width: 300px;
+  }
   .links1 {
   color: white;
   margin-left: 5px;
@@ -392,7 +397,12 @@ background-attachment: fixed;
 }
 .mainabout{
   margin-left: 20px;
+  font-size: 18px;
   text-align: initial;
+}
+.contact{
+  margin-bottom: 30px;
+
 }
 .contact:hover{
 color: rgba(0,0,0,0.5);
@@ -421,7 +431,6 @@ text-decoration: none;
   color: white;
   letter-spacing: 5px;
   font-size: 15px;
-  font-family: 'Poppins', sans-serif;
   }
   nav ul li{
       float: right;
@@ -518,7 +527,6 @@ text-decoration: none;
       position: fixed;
       bottom: 0;
       width: 100%;
-      font-family: 'Poppins', sans-serif;
       }
       
       .bottomNavbar a {
@@ -732,8 +740,19 @@ input[type="email"]:focus {
 #title2{
   color: white;
 }
-
-
+.div.animated.bounceInLeft{
+  max-width: 300px;
+  float: left;
+}
+.login-form{
+  max-width:300px ;
+  float: left;
+}
+.logo{
+  max-width: 300px;
+  max-height: 300px;
+  float: left;
+}
 .btn-block {
   display: block;
   width: 100%;
@@ -1051,4 +1070,45 @@ ul.signup2{
   border-right: 1px solid transparent;
   margin-left: 60px;
   margin-top: 30px;
+}
+
+#tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+
+#tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgba(0,0,0,0.25);
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  top: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+
+#tooltip .tooltiptext::after {
+  content: "";
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+#tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }

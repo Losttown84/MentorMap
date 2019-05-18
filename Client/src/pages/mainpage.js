@@ -1,24 +1,34 @@
 import React from "react";
 import ControlledCarousel from "../components/Carolusel";
 import {Animated} from "react-animated-css";
+import Logo from "../components/Images/logo.png";
 
-
-class First extends React.Component {
+class Mainpage extends React.Component {
   render() {
     return (
       <div>
+
         <section id="about">
-        <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}>
-             <h1 id="titlename">
-            MENTORMAP
-          </h1> 
-          </Animated>
-         
-          
-          <div id="about-bg-diagnal" />
-          <div className="container">
-          </div>
-        
+  
+        <Animated className="login-form" animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}>
+           <div className="row">
+    <img className="logo" src={Logo}></img>
+    </div>
+    </Animated>
+    <div className="row">
+          <form className="login-form">
+          <label>Email</label><br></br>
+          <input type="text"  placeholder="Enter Email" id="loginEmail" />
+        <br></br>
+          <label>Password</label><br></br>
+          <input type="password"  placeholder="Enter Password" id="loginPassword"/>
+        <br></br>
+         <button type="submit" id="button5">log in</button>
+        <br></br>
+          <button className="message" type="submit" href="/mentor" id="#button5">Not Registered? Signup</button>
+          </form>
+            </div>
+          <div id="about-bg-diagnal" />        
         </section>
 
         <section id="sectionTwo">
@@ -48,12 +58,16 @@ class First extends React.Component {
             </div>
           </div>
         </section>
-        <footer>
-          <a class="contact" href="./contact">got any questions?</a>
-        </footer>
-      </div>
+        <br></br><br></br>
+        <section className="footerpart">
+      
+      <footer>
+            <a class="contact" href="./contact">got any questions?</a>
+    </footer>
+    </section>
+            </div>
     );
   }
 }
 
-export default First;
+export default Mainpage;

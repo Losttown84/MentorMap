@@ -9,50 +9,29 @@ class Search extends React.Component {
     return (
         <div>
           
-        <nav className="navbar navbar-expand-xl navbar-light bg-light">
-            <a className="navbar-brand" href="/">
-            <i className="fas fa-chalkboard-teacher" />MentorMap
-            </a>
-            <button
-            className="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            >
-            <span className="navbar-toggler-icon" />
-            </button>
-            <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav">
-                <li className="nav-item">
-                <a className="nav-link" href="/">
-                    Sign Up
-                </a>
-                </li>
-                <li className="nav-item">
-                <a className="nav-link" href="/">
-                    Sign In
-                </a>
-                </li>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a id="NavTitle" class="navbar-brand" href="/"><i className="fas fa-chalkboard-teacher" />  MentorMap</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a className="nav-link" href="/" id="tooltip"><i class="fas fa-heart"><span class="tooltiptext">Favorites</span></i></a>
+            </li>
             </ul>
-            
-            <form className="form-inline">
-                <input
-                className="form-control mr-sm-2"
-                type="search"
-                placeholder="Postal Code"
-                aria-label="Search"
-                />
-                <button
-                className="btn btn-outline-success my-2 my-sm-0"
-                type="submit"
-                >
-                Search
-                </button>
+            <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
-            </div>
+        </div>
         </nav>
         <div class="body-content">
           <div class="module">
