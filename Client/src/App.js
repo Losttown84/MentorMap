@@ -5,9 +5,9 @@ import './App.css';
 import Profile from './pages/profile';
 import Mainpage from './pages/mainpage';
 import Session from './pages/session';
-import Search from './pages/createProfile';
+import Signup from './pages/signup';
 import Contact from './pages/contact';
-import CreatePro from './pages/profilepage';
+import Search from './pages/search';
 import Fav from "./pages/Favorites";
 
 class App extends React.Component {
@@ -17,11 +17,11 @@ class App extends React.Component {
         <Switch>
           <Route exact path ='/contact' component={Contact}/>
           <Route exact path ='/profile' component={Profile}/>
-          <Route exact path ='/findmentor' component={CreatePro}/>
-          <Route exact path ='/signup' component={Mainpage}/>
+          <Route exact path ='/findmentor' component={Search}/>
+          <Route exact path ='/signin' component={Mainpage}/>
           <Route path ='/createsession' component={Session}/>
-          <Route path ='/mentor' component={Search}/>
-          <Route exact path ='/profile/:id' component={Search}/>
+          <Route path ='/signup' component={Signup}/>
+          <Route exact path ='/profile/:id' component={Signup}/>
           <Route exact path ="/favorites" component={Fav}/>
         </Switch>
       </div>

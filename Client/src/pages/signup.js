@@ -1,6 +1,6 @@
 import React from "react";
 
-class Search extends React.Component {
+class Signup extends React.Component {
   render() {
     return (
         <div>
@@ -63,4 +63,4 @@ class Search extends React.Component {
 }
 }
 
-export default Search;
+export default Signup;

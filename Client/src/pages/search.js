@@ -2,7 +2,7 @@ import React from "react";
 import Cards from "../components/Cards";
 
 
-class CreatePro extends React.Component {
+class Search extends React.Component {
     render() {
         return (
 
@@ -58,4 +58,4 @@ class CreatePro extends React.Component {
         )
     }}
 
-export default CreatePro; 
+export default Search; 
