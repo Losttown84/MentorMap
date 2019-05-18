@@ -1083,6 +1083,9 @@ ul.signup2{
 .card-body{
   background:transparent;
 }
+.photo1{
+  max-width: 300px;
+}
 .Card3.card{
   background-color: transparent;
   color: white;
